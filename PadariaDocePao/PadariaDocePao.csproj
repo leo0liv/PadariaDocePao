@@ -52,8 +52,17 @@
     <Compile Include="Forms\FrmTelaPrincipal .Designer.cs">
       <DependentUpon>FrmTelaPrincipal .cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmTelaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTelaLogin.Designer.cs">
+      <DependentUpon>FrmTelaLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FrmTelaLogin.resx">
+      <DependentUpon>FrmTelaLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmTelaPrincipal .resx">
       <DependentUpon>FrmTelaPrincipal .cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +98,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Paodoce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paodoce1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
