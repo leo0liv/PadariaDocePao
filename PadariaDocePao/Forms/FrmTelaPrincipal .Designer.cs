@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pBoxPadariaDocePao = new System.Windows.Forms.PictureBox();
             this.menuPadariaDocePao = new System.Windows.Forms.MenuStrip();
             this.inícioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,7 +48,7 @@
             this.btClientes = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btRelatorios = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).BeginInit();
+            this.pBoxPadariaDocePao = new System.Windows.Forms.PictureBox();
             this.menuPadariaDocePao.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -57,17 +56,8 @@
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pBoxPadariaDocePao
-            // 
-            this.pBoxPadariaDocePao.Image = global::PadariaDocePao.Properties.Resources.Paodoce;
-            this.pBoxPadariaDocePao.Location = new System.Drawing.Point(319, 42);
-            this.pBoxPadariaDocePao.Name = "pBoxPadariaDocePao";
-            this.pBoxPadariaDocePao.Size = new System.Drawing.Size(176, 182);
-            this.pBoxPadariaDocePao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBoxPadariaDocePao.TabIndex = 0;
-            this.pBoxPadariaDocePao.TabStop = false;
             // 
             // menuPadariaDocePao
             // 
@@ -131,6 +121,7 @@
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 19);
             this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // btProdutos
             // 
@@ -264,6 +255,16 @@
             this.btRelatorios.Text = "RELATÓRIOS";
             this.btRelatorios.UseVisualStyleBackColor = false;
             // 
+            // pBoxPadariaDocePao
+            // 
+            this.pBoxPadariaDocePao.Image = global::PadariaDocePao.Properties.Resources.Paodoce;
+            this.pBoxPadariaDocePao.Location = new System.Drawing.Point(319, 42);
+            this.pBoxPadariaDocePao.Name = "pBoxPadariaDocePao";
+            this.pBoxPadariaDocePao.Size = new System.Drawing.Size(176, 182);
+            this.pBoxPadariaDocePao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxPadariaDocePao.TabIndex = 0;
+            this.pBoxPadariaDocePao.TabStop = false;
+            // 
             // FrmTelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,7 +283,6 @@
             this.Name = "FrmTelaPrincipal";
             this.Text = "FrmTelaPrincipal";
             this.Load += new System.EventHandler(this.FrmTelaPrincipal_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).EndInit();
             this.menuPadariaDocePao.ResumeLayout(false);
             this.menuPadariaDocePao.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -291,6 +291,7 @@
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
