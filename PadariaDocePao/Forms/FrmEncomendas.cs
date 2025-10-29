@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace PadariaDocePao
 {
-    public partial class FrmMateriaPrima: Form
+    public partial class FrmEncomendas: Form
     {
-        public FrmMateriaPrima()
+        public FrmEncomendas()
         {
             InitializeComponent();
         }
 
-        private void pBoxPadariaDocePao_Click(object sender, EventArgs e)
+        private void lbQuantidade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
@@ -27,16 +32,16 @@ namespace PadariaDocePao
             this.Close();
         }
 
-        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmProdutos frmProdutos = new FrmProdutos();
-            frmProdutos.Show();
-        }
-
         private void inícioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
             frmTelaPrincipal.Show();
+        }
+
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmProdutos frmProdutos = new FrmProdutos();
+            frmProdutos.Show();
         }
 
         private void matériasPrimasToolStripMenuItem_Click(object sender, EventArgs e)

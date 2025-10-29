@@ -103,6 +103,7 @@
             this.eToolStripMenuItem.Name = "eToolStripMenuItem";
             this.eToolStripMenuItem.Size = new System.Drawing.Size(87, 19);
             this.eToolStripMenuItem.Text = "Encomendas";
+            this.eToolStripMenuItem.Click += new System.EventHandler(this.eToolStripMenuItem_Click);
             // 
             // planejamentoDeProduçãoToolStripMenuItem
             // 
@@ -167,6 +168,7 @@
             this.btEncomendas.TabIndex = 2;
             this.btEncomendas.Text = "ENCOMENDAS";
             this.btEncomendas.UseVisualStyleBackColor = false;
+            this.btEncomendas.Click += new System.EventHandler(this.btEncomendas_Click);
             // 
             // panel3
             // 

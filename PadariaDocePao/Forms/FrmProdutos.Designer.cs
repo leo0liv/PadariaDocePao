@@ -37,18 +37,18 @@
             this.configuraçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.inputNomeProduto = new System.Windows.Forms.TextBox();
+            this.inputCategoria = new System.Windows.Forms.TextBox();
+            this.InputPrecoVenda = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btAdicionar = new System.Windows.Forms.Button();
+            this.btExcluir = new System.Windows.Forms.Button();
+            this.dataView1 = new System.Windows.Forms.DataGridView();
+            this.btSalvar = new System.Windows.Forms.Button();
             this.pBoxPadariaDocePao = new System.Windows.Forms.PictureBox();
             this.menuPadariaDocePao.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,6 +97,7 @@
             this.eToolStripMenuItem.Name = "eToolStripMenuItem";
             this.eToolStripMenuItem.Size = new System.Drawing.Size(87, 19);
             this.eToolStripMenuItem.Text = "Encomendas";
+            this.eToolStripMenuItem.Click += new System.EventHandler(this.eToolStripMenuItem_Click);
             // 
             // planejamentoDeProduçãoToolStripMenuItem
             // 
@@ -126,26 +127,26 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "NOME DO PRODUTO";
             // 
-            // textBox1
+            // inputNomeProduto
             // 
-            this.textBox1.Location = new System.Drawing.Point(136, 87);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 20);
-            this.textBox1.TabIndex = 5;
+            this.inputNomeProduto.Location = new System.Drawing.Point(136, 87);
+            this.inputNomeProduto.Name = "inputNomeProduto";
+            this.inputNomeProduto.Size = new System.Drawing.Size(205, 20);
+            this.inputNomeProduto.TabIndex = 5;
             // 
-            // textBox2
+            // inputCategoria
             // 
-            this.textBox2.Location = new System.Drawing.Point(347, 87);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(205, 20);
-            this.textBox2.TabIndex = 7;
+            this.inputCategoria.Location = new System.Drawing.Point(347, 87);
+            this.inputCategoria.Name = "inputCategoria";
+            this.inputCategoria.Size = new System.Drawing.Size(205, 20);
+            this.inputCategoria.TabIndex = 7;
             // 
-            // textBox3
+            // InputPrecoVenda
             // 
-            this.textBox3.Location = new System.Drawing.Point(558, 87);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(205, 20);
-            this.textBox3.TabIndex = 9;
+            this.InputPrecoVenda.Location = new System.Drawing.Point(558, 87);
+            this.InputPrecoVenda.Name = "InputPrecoVenda";
+            this.InputPrecoVenda.Size = new System.Drawing.Size(205, 20);
+            this.InputPrecoVenda.TabIndex = 9;
             // 
             // label2
             // 
@@ -165,43 +166,43 @@
             this.label3.TabIndex = 11;
             this.label3.Text = "PREÇO DE VENDA";
             // 
-            // button1
+            // btAdicionar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button1.Location = new System.Drawing.Point(516, 387);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 36);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Adicionar Ingrediente";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btAdicionar.Location = new System.Drawing.Point(516, 387);
+            this.btAdicionar.Name = "btAdicionar";
+            this.btAdicionar.Size = new System.Drawing.Size(133, 36);
+            this.btAdicionar.TabIndex = 12;
+            this.btAdicionar.Text = "Adicionar Ingrediente";
+            this.btAdicionar.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btExcluir
             // 
-            this.button2.BackColor = System.Drawing.Color.IndianRed;
-            this.button2.Location = new System.Drawing.Point(655, 387);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(133, 36);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Excluir Produto";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btExcluir.BackColor = System.Drawing.Color.IndianRed;
+            this.btExcluir.Location = new System.Drawing.Point(655, 387);
+            this.btExcluir.Name = "btExcluir";
+            this.btExcluir.Size = new System.Drawing.Size(133, 36);
+            this.btExcluir.TabIndex = 13;
+            this.btExcluir.Text = "Excluir Produto";
+            this.btExcluir.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // dataView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 169);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 212);
-            this.dataGridView1.TabIndex = 14;
+            this.dataView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataView1.Location = new System.Drawing.Point(12, 169);
+            this.dataView1.Name = "dataView1";
+            this.dataView1.Size = new System.Drawing.Size(776, 212);
+            this.dataView1.TabIndex = 14;
             // 
-            // button3
+            // btSalvar
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button3.Location = new System.Drawing.Point(377, 387);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(133, 36);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Salvar Produto";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btSalvar.Location = new System.Drawing.Point(377, 387);
+            this.btSalvar.Name = "btSalvar";
+            this.btSalvar.Size = new System.Drawing.Size(133, 36);
+            this.btSalvar.TabIndex = 15;
+            this.btSalvar.Text = "Salvar Produto";
+            this.btSalvar.UseVisualStyleBackColor = false;
             // 
             // pBoxPadariaDocePao
             // 
@@ -219,15 +220,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(244)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btSalvar);
+            this.Controls.Add(this.dataView1);
+            this.Controls.Add(this.btExcluir);
+            this.Controls.Add(this.btAdicionar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.InputPrecoVenda);
+            this.Controls.Add(this.inputCategoria);
+            this.Controls.Add(this.inputNomeProduto);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pBoxPadariaDocePao);
             this.Controls.Add(this.menuPadariaDocePao);
@@ -235,7 +236,7 @@
             this.Text = "FrmProdutos";
             this.menuPadariaDocePao.ResumeLayout(false);
             this.menuPadariaDocePao.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -254,14 +255,14 @@
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.PictureBox pBoxPadariaDocePao;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox inputNomeProduto;
+        private System.Windows.Forms.TextBox inputCategoria;
+        private System.Windows.Forms.TextBox InputPrecoVenda;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btAdicionar;
+        private System.Windows.Forms.Button btExcluir;
+        private System.Windows.Forms.DataGridView dataView1;
+        private System.Windows.Forms.Button btSalvar;
     }
 }

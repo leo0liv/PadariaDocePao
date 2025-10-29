@@ -39,5 +39,11 @@ namespace PadariaDocePao
             FrmProdutos frmProdutos = new FrmProdutos();
             frmProdutos.Show();
         }
+
+        private void eToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmEncomendas frmEncomendas = new FrmEncomendas();
+            frmEncomendas.Show();
+        }
     }
 }
