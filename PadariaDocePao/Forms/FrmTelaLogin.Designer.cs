@@ -39,6 +39,7 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btFechar = new System.Windows.Forms.Button();
             this.lblMensagem = new System.Windows.Forms.Label();
+            this.cbSalvarLogin = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxLogo)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -76,7 +77,7 @@
             // 
             this.btEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btEntrar.FlatAppearance.BorderSize = 0;
-            this.btEntrar.Location = new System.Drawing.Point(481, 339);
+            this.btEntrar.Location = new System.Drawing.Point(494, 338);
             this.btEntrar.Name = "btEntrar";
             this.btEntrar.Size = new System.Drawing.Size(100, 32);
             this.btEntrar.TabIndex = 11;
@@ -88,6 +89,7 @@
             // 
             this.mtbSenha.Location = new System.Drawing.Point(456, 281);
             this.mtbSenha.Name = "mtbSenha";
+            this.mtbSenha.PasswordChar = '*';
             this.mtbSenha.Size = new System.Drawing.Size(243, 20);
             this.mtbSenha.TabIndex = 10;
             // 
@@ -121,7 +123,7 @@
             // 
             this.btFechar.BackColor = System.Drawing.Color.IndianRed;
             this.btFechar.FlatAppearance.BorderSize = 0;
-            this.btFechar.Location = new System.Drawing.Point(587, 339);
+            this.btFechar.Location = new System.Drawing.Point(600, 338);
             this.btFechar.Name = "btFechar";
             this.btFechar.Size = new System.Drawing.Size(100, 32);
             this.btFechar.TabIndex = 12;
@@ -132,10 +134,20 @@
             // lblMensagem
             // 
             this.lblMensagem.AutoSize = true;
-            this.lblMensagem.Location = new System.Drawing.Point(503, 304);
+            this.lblMensagem.Location = new System.Drawing.Point(518, 209);
             this.lblMensagem.Name = "lblMensagem";
             this.lblMensagem.Size = new System.Drawing.Size(0, 13);
             this.lblMensagem.TabIndex = 16;
+            // 
+            // cbSalvarLogin
+            // 
+            this.cbSalvarLogin.AutoSize = true;
+            this.cbSalvarLogin.Location = new System.Drawing.Point(614, 307);
+            this.cbSalvarLogin.Name = "cbSalvarLogin";
+            this.cbSalvarLogin.Size = new System.Drawing.Size(85, 17);
+            this.cbSalvarLogin.TabIndex = 17;
+            this.cbSalvarLogin.Text = "Salvar Login";
+            this.cbSalvarLogin.UseVisualStyleBackColor = true;
             // 
             // FrmTelaLogin
             // 
@@ -143,6 +155,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(244)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbSalvarLogin);
             this.Controls.Add(this.lblMensagem);
             this.Controls.Add(this.btEntrar);
             this.Controls.Add(this.btFechar);
@@ -154,6 +167,8 @@
             this.Controls.Add(this.pBoxLogo);
             this.Name = "FrmTelaLogin";
             this.Text = "FrmTelaLogin";
+            this.Load += new System.EventHandler(this.FrmTelaLogin_Load);
+            this.Shown += new System.EventHandler(this.FrmTelaLogin_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxLogo)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -173,5 +188,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button btFechar;
         private System.Windows.Forms.Label lblMensagem;
+        private System.Windows.Forms.CheckBox cbSalvarLogin;
     }
 }

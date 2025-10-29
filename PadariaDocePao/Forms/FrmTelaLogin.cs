@@ -33,6 +33,19 @@ namespace PadariaDocePao
                 lblMensagem.ForeColor = System.Drawing.Color.Green;
                 lblMensagem.Text = "Login realizado com sucesso!";
 
+                // Salva ou limpa o nome do usuário
+                if (cbSalvarLogin.Checked)
+                {
+                    Properties.Settings.Default.UsuarioSalvo = usuario;
+                }
+                else
+                {
+                    Properties.Settings.Default.UsuarioSalvo = "";
+                }
+
+                // Grava as configurações
+                Properties.Settings.Default.Save();
+
                 // Exemplo: abrir novo formulário e esconder o login
                 FrmTelaPrincipal telaPrincipal = new FrmTelaPrincipal();
                 telaPrincipal.Show();
@@ -43,6 +56,24 @@ namespace PadariaDocePao
                 lblMensagem.ForeColor = System.Drawing.Color.Red;
                 lblMensagem.Text = "Usuário ou senha incorretos!";
             }
+        }
+
+        private void FrmTelaLogin_Load(object sender, EventArgs e)
+        {
+            // Carrega o usuário salvo, se existir
+            mtbLogin.Text = Properties.Settings.Default.UsuarioSalvo;
+
+            // Marca o checkbox se houver um login salvo
+            if (!string.IsNullOrEmpty(mtbLogin.Text))
+                cbSalvarLogin.Checked = true;
+        }
+        private void FrmTelaLogin_Shown(object sender, EventArgs e)
+        {
+            // 👇 Aqui garantimos o foco correto
+            if (!string.IsNullOrEmpty(mtbLogin.Text))
+                mtbSenha.Focus();   // Se já tem login salvo → foca senha
+            else
+                mtbLogin.Focus(); // Senão → foca usuário
         }
     }
 }
