@@ -35,6 +35,7 @@ namespace PadariaDocePao
         private void inícioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
+            this.Close();
             frmTelaPrincipal.Show();
         }
 

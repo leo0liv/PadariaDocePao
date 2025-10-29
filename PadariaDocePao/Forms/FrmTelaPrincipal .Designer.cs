@@ -84,6 +84,7 @@
             this.inícioToolStripMenuItem.Name = "inícioToolStripMenuItem";
             this.inícioToolStripMenuItem.Size = new System.Drawing.Size(48, 19);
             this.inícioToolStripMenuItem.Text = "Início";
+            this.inícioToolStripMenuItem.Click += new System.EventHandler(this.inícioToolStripMenuItem_Click);
             // 
             // produtosToolStripMenuItem
             // 
