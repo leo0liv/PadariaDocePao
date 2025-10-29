@@ -39,7 +39,12 @@ namespace PadariaDocePao
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            // Fecha o menu atual
+            this.Hide();
+
+            // Reabre o formulário de login
+            FrmTelaLogin frmTelaLogin = new FrmTelaLogin();
+            frmTelaLogin.Show();
         }
 
         private void btProdutos_Click(object sender, EventArgs e)

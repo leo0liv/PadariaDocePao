@@ -69,6 +69,7 @@ namespace PadariaDocePao
         }
         private void FrmTelaLogin_Shown(object sender, EventArgs e)
         {
+            mtbSenha.Text = ""; // limpa senha ao reabrir
             // 👇 Aqui garantimos o foco correto
             if (!string.IsNullOrEmpty(mtbLogin.Text))
                 mtbSenha.Focus();   // Se já tem login salvo → foca senha
