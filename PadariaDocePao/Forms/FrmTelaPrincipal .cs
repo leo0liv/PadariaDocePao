@@ -41,5 +41,11 @@ namespace PadariaDocePao
         {
             this.Close();
         }
+
+        private void btProdutos_Click(object sender, EventArgs e)
+        {
+            FrmProdutos frmProdutos = new FrmProdutos();
+            frmProdutos.Show();
+        }
     }
 }

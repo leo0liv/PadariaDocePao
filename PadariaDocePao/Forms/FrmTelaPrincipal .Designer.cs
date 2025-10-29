@@ -135,6 +135,7 @@
             this.btProdutos.TabIndex = 2;
             this.btProdutos.Text = "PRODUTOS";
             this.btProdutos.UseVisualStyleBackColor = false;
+            this.btProdutos.Click += new System.EventHandler(this.btProdutos_Click);
             // 
             // panel1
             // 

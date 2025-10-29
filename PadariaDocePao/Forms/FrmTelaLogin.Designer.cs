@@ -74,7 +74,7 @@
             // 
             // btEntrar
             // 
-            this.btEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btEntrar.FlatAppearance.BorderSize = 0;
             this.btEntrar.Location = new System.Drawing.Point(481, 339);
             this.btEntrar.Name = "btEntrar";
