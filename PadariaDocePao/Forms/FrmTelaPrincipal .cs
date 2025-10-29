@@ -52,5 +52,11 @@ namespace PadariaDocePao
             FrmProdutos frmProdutos = new FrmProdutos();
             frmProdutos.Show();
         }
+
+        private void btMateriaPrima_Click(object sender, EventArgs e)
+        {
+            FrmMateriaPrima frmMateriaPrima = new FrmMateriaPrima();
+            frmMateriaPrima.Show();
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace PadariaDocePao
 {
-    partial class FrmProdutos
+    partial class FrmMateriaPrima
     {
         /// <summary>
         /// Required designer variable.
@@ -36,20 +36,22 @@
             this.planejamentoDeProduçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuraçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.pBoxPadariaDocePao = new System.Windows.Forms.PictureBox();
+            this.lbEstoque = new System.Windows.Forms.Label();
+            this.lbUnidadeMedida = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lbIngrediente = new System.Windows.Forms.Label();
+            this.lbNivelMinimo = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
-            this.pBoxPadariaDocePao = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuPadariaDocePao.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuPadariaDocePao
@@ -68,7 +70,7 @@
             this.menuPadariaDocePao.Location = new System.Drawing.Point(0, 0);
             this.menuPadariaDocePao.Name = "menuPadariaDocePao";
             this.menuPadariaDocePao.Size = new System.Drawing.Size(800, 23);
-            this.menuPadariaDocePao.TabIndex = 2;
+            this.menuPadariaDocePao.TabIndex = 3;
             this.menuPadariaDocePao.Text = "menuPadariaDocePao";
             // 
             // inícioToolStripMenuItem
@@ -117,126 +119,145 @@
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
-            // label1
+            // pBoxPadariaDocePao
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(174, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "NOME DO PRODUTO";
+            this.pBoxPadariaDocePao.Image = global::PadariaDocePao.Properties.Resources.Paodoce;
+            this.pBoxPadariaDocePao.Location = new System.Drawing.Point(23, 26);
+            this.pBoxPadariaDocePao.Name = "pBoxPadariaDocePao";
+            this.pBoxPadariaDocePao.Size = new System.Drawing.Size(105, 98);
+            this.pBoxPadariaDocePao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxPadariaDocePao.TabIndex = 4;
+            this.pBoxPadariaDocePao.TabStop = false;
+            this.pBoxPadariaDocePao.Click += new System.EventHandler(this.pBoxPadariaDocePao_Click);
             // 
-            // textBox1
+            // lbEstoque
             // 
-            this.textBox1.Location = new System.Drawing.Point(136, 87);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 20);
-            this.textBox1.TabIndex = 5;
+            this.lbEstoque.AutoSize = true;
+            this.lbEstoque.Location = new System.Drawing.Point(592, 36);
+            this.lbEstoque.Name = "lbEstoque";
+            this.lbEstoque.Size = new System.Drawing.Size(152, 13);
+            this.lbEstoque.TabIndex = 17;
+            this.lbEstoque.Text = "QUANTIDADE EM ESTOQUE";
             // 
-            // textBox2
+            // lbUnidadeMedida
             // 
-            this.textBox2.Location = new System.Drawing.Point(347, 87);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(205, 20);
-            this.textBox2.TabIndex = 7;
+            this.lbUnidadeMedida.AutoSize = true;
+            this.lbUnidadeMedida.Location = new System.Drawing.Point(391, 36);
+            this.lbUnidadeMedida.Name = "lbUnidadeMedida";
+            this.lbUnidadeMedida.Size = new System.Drawing.Size(119, 13);
+            this.lbUnidadeMedida.TabIndex = 16;
+            this.lbUnidadeMedida.Text = "UNIDADE DE MEDIDA";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(558, 87);
+            this.textBox3.Location = new System.Drawing.Point(561, 52);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(205, 20);
-            this.textBox3.TabIndex = 9;
+            this.textBox3.TabIndex = 15;
             // 
-            // label2
+            // textBox2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(411, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 13);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "CATEGORIA";
+            this.textBox2.Location = new System.Drawing.Point(350, 52);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(205, 20);
+            this.textBox2.TabIndex = 14;
             // 
-            // label3
+            // textBox1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(605, 71);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 13);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "PREÇO DE VENDA";
+            this.textBox1.Location = new System.Drawing.Point(139, 52);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(205, 20);
+            this.textBox1.TabIndex = 13;
             // 
-            // button1
+            // lbIngrediente
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button1.Location = new System.Drawing.Point(516, 387);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 36);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Adicionar Ingrediente";
-            this.button1.UseVisualStyleBackColor = false;
+            this.lbIngrediente.AutoSize = true;
+            this.lbIngrediente.Location = new System.Drawing.Point(177, 36);
+            this.lbIngrediente.Name = "lbIngrediente";
+            this.lbIngrediente.Size = new System.Drawing.Size(135, 13);
+            this.lbIngrediente.TabIndex = 12;
+            this.lbIngrediente.Text = "NOME DO INGREDIENTE";
             // 
-            // button2
+            // lbNivelMinimo
             // 
-            this.button2.BackColor = System.Drawing.Color.IndianRed;
-            this.button2.Location = new System.Drawing.Point(655, 387);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(133, 36);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Excluir Produto";
-            this.button2.UseVisualStyleBackColor = false;
+            this.lbNivelMinimo.AutoSize = true;
+            this.lbNivelMinimo.Location = new System.Drawing.Point(177, 86);
+            this.lbNivelMinimo.Name = "lbNivelMinimo";
+            this.lbNivelMinimo.Size = new System.Drawing.Size(132, 13);
+            this.lbNivelMinimo.TabIndex = 18;
+            this.lbNivelMinimo.Text = "NIVEL MINIMO (ALERTA)";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(139, 102);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(205, 20);
+            this.textBox4.TabIndex = 19;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 169);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 149);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 212);
-            this.dataGridView1.TabIndex = 14;
+            this.dataGridView1.Size = new System.Drawing.Size(776, 225);
+            this.dataGridView1.TabIndex = 20;
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button3.Location = new System.Drawing.Point(377, 387);
+            this.button3.Location = new System.Drawing.Point(377, 380);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(133, 36);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Salvar Produto";
+            this.button3.TabIndex = 23;
+            this.button3.Text = "Salvar";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // pBoxPadariaDocePao
+            // button2
             // 
-            this.pBoxPadariaDocePao.Image = global::PadariaDocePao.Properties.Resources.Paodoce;
-            this.pBoxPadariaDocePao.Location = new System.Drawing.Point(25, 47);
-            this.pBoxPadariaDocePao.Name = "pBoxPadariaDocePao";
-            this.pBoxPadariaDocePao.Size = new System.Drawing.Size(105, 98);
-            this.pBoxPadariaDocePao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBoxPadariaDocePao.TabIndex = 3;
-            this.pBoxPadariaDocePao.TabStop = false;
+            this.button2.BackColor = System.Drawing.Color.IndianRed;
+            this.button2.Location = new System.Drawing.Point(655, 380);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(133, 36);
+            this.button2.TabIndex = 22;
+            this.button2.Text = "Excluir";
+            this.button2.UseVisualStyleBackColor = false;
             // 
-            // FrmProdutos
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button1.Location = new System.Drawing.Point(516, 380);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(133, 36);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Atualizar Estoque";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // FrmMateriaPrima
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(244)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.lbNivelMinimo);
+            this.Controls.Add(this.lbEstoque);
+            this.Controls.Add(this.lbUnidadeMedida);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbIngrediente);
             this.Controls.Add(this.pBoxPadariaDocePao);
             this.Controls.Add(this.menuPadariaDocePao);
-            this.Name = "FrmProdutos";
-            this.Text = "FrmProdutos";
+            this.Name = "FrmMateriaPrima";
+            this.Text = "FrmMateriaPrima";
             this.menuPadariaDocePao.ResumeLayout(false);
             this.menuPadariaDocePao.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,15 +274,17 @@
         private System.Windows.Forms.ToolStripMenuItem configuraçõesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.PictureBox pBoxPadariaDocePao;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lbEstoque;
+        private System.Windows.Forms.Label lbUnidadeMedida;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lbIngrediente;
+        private System.Windows.Forms.Label lbNivelMinimo;
+        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

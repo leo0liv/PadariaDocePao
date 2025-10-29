@@ -64,8 +64,17 @@
     <Compile Include="Forms\FrmProdutos.Designer.cs">
       <DependentUpon>FrmProdutos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmMateriaPrima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMateriaPrima.Designer.cs">
+      <DependentUpon>FrmMateriaPrima.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FrmMateriaPrima.resx">
+      <DependentUpon>FrmMateriaPrima.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmProdutos.resx">
       <DependentUpon>FrmProdutos.cs</DependentUpon>
     </EmbeddedResource>

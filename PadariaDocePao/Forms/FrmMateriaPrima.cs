@@ -10,16 +10,27 @@ using System.Windows.Forms;
 
 namespace PadariaDocePao
 {
-    public partial class FrmProdutos: Form
+    public partial class FrmMateriaPrima: Form
     {
-        public FrmProdutos()
+        public FrmMateriaPrima()
         {
             InitializeComponent();
+        }
+
+        private void pBoxPadariaDocePao_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmProdutos frmProdutos = new FrmProdutos();
+            frmProdutos.Show();
         }
 
         private void inícioToolStripMenuItem_Click(object sender, EventArgs e)
@@ -32,12 +43,6 @@ namespace PadariaDocePao
         {
             FrmMateriaPrima frmMateriaPrima = new FrmMateriaPrima();
             frmMateriaPrima.Show();
-        }
-
-        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmProdutos frmProdutos = new FrmProdutos();
-            frmProdutos.Show();
         }
     }
 }

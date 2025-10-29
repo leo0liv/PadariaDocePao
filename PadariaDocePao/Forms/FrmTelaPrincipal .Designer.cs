@@ -211,6 +211,7 @@
             this.btMateriaPrima.TabIndex = 2;
             this.btMateriaPrima.Text = "MATÉRIAS-PRIMAS";
             this.btMateriaPrima.UseVisualStyleBackColor = false;
+            this.btMateriaPrima.Click += new System.EventHandler(this.btMateriaPrima_Click);
             // 
             // panel5
             // 
