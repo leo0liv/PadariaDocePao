@@ -237,6 +237,7 @@
             this.btClientes.TabIndex = 2;
             this.btClientes.Text = "CLIENTES";
             this.btClientes.UseVisualStyleBackColor = false;
+            this.btClientes.Click += new System.EventHandler(this.btClientes_Click);
             // 
             // panel6
             // 

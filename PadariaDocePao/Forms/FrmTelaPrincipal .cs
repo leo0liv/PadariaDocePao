@@ -79,5 +79,11 @@ namespace PadariaDocePao
         {
 
         }
+
+        private void btClientes_Click(object sender, EventArgs e)
+        {
+            FrmCadastroCliente frmCadastroCliente = new FrmCadastroCliente();
+            frmCadastroCliente.Show();
+        }
     }
 }
