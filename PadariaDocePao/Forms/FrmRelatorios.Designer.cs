@@ -166,6 +166,8 @@
             // btRelatorios
             // 
             this.btRelatorios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btRelatorios.FlatAppearance.BorderSize = 0;
+            this.btRelatorios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btRelatorios.Location = new System.Drawing.Point(713, 113);
             this.btRelatorios.Name = "btRelatorios";
             this.btRelatorios.Size = new System.Drawing.Size(75, 23);

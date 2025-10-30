@@ -77,6 +77,7 @@
             // 
             this.btEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btEntrar.FlatAppearance.BorderSize = 0;
+            this.btEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btEntrar.Location = new System.Drawing.Point(494, 338);
             this.btEntrar.Name = "btEntrar";
             this.btEntrar.Size = new System.Drawing.Size(100, 32);
@@ -123,6 +124,7 @@
             // 
             this.btFechar.BackColor = System.Drawing.Color.IndianRed;
             this.btFechar.FlatAppearance.BorderSize = 0;
+            this.btFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btFechar.Location = new System.Drawing.Point(600, 338);
             this.btFechar.Name = "btFechar";
             this.btFechar.Size = new System.Drawing.Size(100, 32);

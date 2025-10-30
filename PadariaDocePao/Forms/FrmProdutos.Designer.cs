@@ -170,6 +170,8 @@
             // btAdicionar
             // 
             this.btAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btAdicionar.FlatAppearance.BorderSize = 0;
+            this.btAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btAdicionar.Location = new System.Drawing.Point(516, 387);
             this.btAdicionar.Name = "btAdicionar";
             this.btAdicionar.Size = new System.Drawing.Size(133, 36);
@@ -180,6 +182,8 @@
             // btExcluir
             // 
             this.btExcluir.BackColor = System.Drawing.Color.IndianRed;
+            this.btExcluir.FlatAppearance.BorderSize = 0;
+            this.btExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btExcluir.Location = new System.Drawing.Point(655, 387);
             this.btExcluir.Name = "btExcluir";
             this.btExcluir.Size = new System.Drawing.Size(133, 36);
@@ -198,6 +202,8 @@
             // btSalvar
             // 
             this.btSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btSalvar.FlatAppearance.BorderSize = 0;
+            this.btSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSalvar.Location = new System.Drawing.Point(377, 387);
             this.btSalvar.Name = "btSalvar";
             this.btSalvar.Size = new System.Drawing.Size(133, 36);

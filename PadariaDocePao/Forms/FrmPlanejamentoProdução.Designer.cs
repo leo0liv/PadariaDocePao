@@ -143,6 +143,8 @@
             // btGerarOrdem
             // 
             this.btGerarOrdem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btGerarOrdem.FlatAppearance.BorderSize = 0;
+            this.btGerarOrdem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btGerarOrdem.Location = new System.Drawing.Point(278, 390);
             this.btGerarOrdem.Name = "btGerarOrdem";
             this.btGerarOrdem.Size = new System.Drawing.Size(195, 36);
@@ -153,6 +155,8 @@
             // btImprimirListaProducao
             // 
             this.btImprimirListaProducao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btImprimirListaProducao.FlatAppearance.BorderSize = 0;
+            this.btImprimirListaProducao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btImprimirListaProducao.Location = new System.Drawing.Point(479, 390);
             this.btImprimirListaProducao.Name = "btImprimirListaProducao";
             this.btImprimirListaProducao.Size = new System.Drawing.Size(195, 36);
