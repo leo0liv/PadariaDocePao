@@ -263,6 +263,7 @@
             this.btRelatorios.TabIndex = 2;
             this.btRelatorios.Text = "RELATÓRIOS";
             this.btRelatorios.UseVisualStyleBackColor = false;
+            this.btRelatorios.Click += new System.EventHandler(this.btRelatorios_Click);
             // 
             // pBoxPadariaDocePao
             // 

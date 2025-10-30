@@ -101,5 +101,11 @@ namespace PadariaDocePao
             FrmMateriaPrima frmMateriaPrima = new FrmMateriaPrima();
             frmMateriaPrima.Show();
         }
+
+        private void btRelatorios_Click(object sender, EventArgs e)
+        {
+            FrmRelatorios frmRelatorios = new FrmRelatorios();
+            frmRelatorios.Show();
+        }
     }
 }
