@@ -50,28 +50,24 @@ namespace PadariaDocePao
         private void btProdutos_Click(object sender, EventArgs e)
         {
             FrmProdutos frmProdutos = new FrmProdutos();
-            this.Close();
             frmProdutos.Show();
         }
 
         private void btMateriaPrima_Click(object sender, EventArgs e)
         {
             FrmMateriaPrima frmMateriaPrima = new FrmMateriaPrima();
-            this.Close();
             frmMateriaPrima.Show();
         }
 
         private void eToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmEncomendas frmEncomendas = new FrmEncomendas();
-            this.Close();
             frmEncomendas.Show();
         }
 
         private void btEncomendas_Click(object sender, EventArgs e)
         {
             FrmEncomendas frmEncomendas = new FrmEncomendas();
-            this.Close();
             frmEncomendas.Show();
         }
 
