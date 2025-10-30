@@ -98,6 +98,7 @@
             this.matériasPrimasToolStripMenuItem.Name = "matériasPrimasToolStripMenuItem";
             this.matériasPrimasToolStripMenuItem.Size = new System.Drawing.Size(105, 19);
             this.matériasPrimasToolStripMenuItem.Text = "Matérias-Primas";
+            this.matériasPrimasToolStripMenuItem.Click += new System.EventHandler(this.matériasPrimasToolStripMenuItem_Click);
             // 
             // eToolStripMenuItem
             // 

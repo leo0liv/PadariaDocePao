@@ -29,7 +29,8 @@ namespace PadariaDocePao
 
         private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FrmProdutos frmProdutos = new FrmProdutos();
+            frmProdutos.Show();
         }
 
         private void FrmTelaPrincipal_Load(object sender, EventArgs e)
@@ -73,7 +74,8 @@ namespace PadariaDocePao
 
         private void inícioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
+            frmTelaPrincipal.Show();
         }
 
         private void btClientes_Click(object sender, EventArgs e)
@@ -92,6 +94,12 @@ namespace PadariaDocePao
         {
             FrmPlanejamentoProdução frmPlanejamentoProdução = new FrmPlanejamentoProdução();
             frmPlanejamentoProdução.Show();
+        }
+
+        private void matériasPrimasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMateriaPrima frmMateriaPrima = new FrmMateriaPrima();
+            frmMateriaPrima.Show();
         }
     }
 }
