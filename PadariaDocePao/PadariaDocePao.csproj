@@ -77,16 +77,16 @@
     <Compile Include="Forms\FrmEncomendas.Designer.cs">
       <DependentUpon>FrmEncomendas.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCadastroCliente.cs">
+    <Compile Include="Forms\FrmCadastroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCadastroCliente.Designer.cs">
+    <Compile Include="Forms\FrmCadastroCliente.Designer.cs">
       <DependentUpon>FrmCadastroCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPlanejamentoProdução.cs">
+    <Compile Include="Forms\FrmPlanejamentoProdução.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPlanejamentoProdução.Designer.cs">
+    <Compile Include="Forms\FrmPlanejamentoProdução.Designer.cs">
       <DependentUpon>FrmPlanejamentoProdução.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -106,10 +106,10 @@
     <EmbeddedResource Include="Forms\FrmTelaPrincipal .resx">
       <DependentUpon>FrmTelaPrincipal .cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCadastroCliente.resx">
+    <EmbeddedResource Include="Forms\FrmCadastroCliente.resx">
       <DependentUpon>FrmCadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPlanejamentoProdução.resx">
+    <EmbeddedResource Include="Forms\FrmPlanejamentoProdução.resx">
       <DependentUpon>FrmPlanejamentoProdução.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
