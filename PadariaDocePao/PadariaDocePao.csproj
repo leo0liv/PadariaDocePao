@@ -83,6 +83,12 @@
     <Compile Include="FrmCadastroCliente.Designer.cs">
       <DependentUpon>FrmCadastroCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPlanejamentoProdução.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlanejamentoProdução.Designer.cs">
+      <DependentUpon>FrmPlanejamentoProdução.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\FrmEncomendas.resx">
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCadastroCliente.resx">
       <DependentUpon>FrmCadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlanejamentoProdução.resx">
+      <DependentUpon>FrmPlanejamentoProdução.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

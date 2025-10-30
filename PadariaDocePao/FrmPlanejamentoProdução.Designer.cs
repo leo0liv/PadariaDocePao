@@ -1,6 +1,6 @@
 ﻿namespace PadariaDocePao
 {
-    partial class FrmProdutos
+    partial class FrmPlanejamentoProdução
     {
         /// <summary>
         /// Required designer variable.
@@ -36,19 +36,13 @@
             this.planejamentoDeProduçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuraçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.inputNomeProduto = new System.Windows.Forms.TextBox();
-            this.inputCategoria = new System.Windows.Forms.TextBox();
-            this.InputPrecoVenda = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btAdicionar = new System.Windows.Forms.Button();
-            this.btExcluir = new System.Windows.Forms.Button();
-            this.dataView1 = new System.Windows.Forms.DataGridView();
-            this.btSalvar = new System.Windows.Forms.Button();
+            this.dataView4 = new System.Windows.Forms.DataGridView();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.pBoxPadariaDocePao = new System.Windows.Forms.PictureBox();
+            this.btGerarOrdem = new System.Windows.Forms.Button();
+            this.btImprimirListaProducao = new System.Windows.Forms.Button();
             this.menuPadariaDocePao.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,125 +113,70 @@
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
-            // label1
+            // dataView4
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(174, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "NOME DO PRODUTO";
+            this.dataView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataView4.Location = new System.Drawing.Point(146, 62);
+            this.dataView4.Name = "dataView4";
+            this.dataView4.Size = new System.Drawing.Size(642, 322);
+            this.dataView4.TabIndex = 3;
+            this.dataView4.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // inputNomeProduto
+            // dateTimePicker1
             // 
-            this.inputNomeProduto.Location = new System.Drawing.Point(136, 87);
-            this.inputNomeProduto.Name = "inputNomeProduto";
-            this.inputNomeProduto.Size = new System.Drawing.Size(205, 20);
-            this.inputNomeProduto.TabIndex = 5;
-            // 
-            // inputCategoria
-            // 
-            this.inputCategoria.Location = new System.Drawing.Point(347, 87);
-            this.inputCategoria.Name = "inputCategoria";
-            this.inputCategoria.Size = new System.Drawing.Size(205, 20);
-            this.inputCategoria.TabIndex = 7;
-            // 
-            // InputPrecoVenda
-            // 
-            this.InputPrecoVenda.Location = new System.Drawing.Point(558, 87);
-            this.InputPrecoVenda.Name = "InputPrecoVenda";
-            this.InputPrecoVenda.Size = new System.Drawing.Size(205, 20);
-            this.InputPrecoVenda.TabIndex = 9;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(411, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 13);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "CATEGORIA";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(605, 71);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 13);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "PREÇO DE VENDA";
-            // 
-            // btAdicionar
-            // 
-            this.btAdicionar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btAdicionar.Location = new System.Drawing.Point(516, 387);
-            this.btAdicionar.Name = "btAdicionar";
-            this.btAdicionar.Size = new System.Drawing.Size(133, 36);
-            this.btAdicionar.TabIndex = 12;
-            this.btAdicionar.Text = "Adicionar Ingrediente";
-            this.btAdicionar.UseVisualStyleBackColor = false;
-            // 
-            // btExcluir
-            // 
-            this.btExcluir.BackColor = System.Drawing.Color.IndianRed;
-            this.btExcluir.Location = new System.Drawing.Point(655, 387);
-            this.btExcluir.Name = "btExcluir";
-            this.btExcluir.Size = new System.Drawing.Size(133, 36);
-            this.btExcluir.TabIndex = 13;
-            this.btExcluir.Text = "Excluir Produto";
-            this.btExcluir.UseVisualStyleBackColor = false;
-            // 
-            // dataView1
-            // 
-            this.dataView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataView1.Location = new System.Drawing.Point(12, 169);
-            this.dataView1.Name = "dataView1";
-            this.dataView1.Size = new System.Drawing.Size(776, 212);
-            this.dataView1.TabIndex = 14;
-            // 
-            // btSalvar
-            // 
-            this.btSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btSalvar.Location = new System.Drawing.Point(377, 387);
-            this.btSalvar.Name = "btSalvar";
-            this.btSalvar.Size = new System.Drawing.Size(133, 36);
-            this.btSalvar.TabIndex = 15;
-            this.btSalvar.Text = "Salvar Produto";
-            this.btSalvar.UseVisualStyleBackColor = false;
+            this.dateTimePicker1.Location = new System.Drawing.Point(566, 36);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(222, 20);
+            this.dateTimePicker1.TabIndex = 4;
             // 
             // pBoxPadariaDocePao
             // 
             this.pBoxPadariaDocePao.Image = global::PadariaDocePao.Properties.Resources.Paodoce;
-            this.pBoxPadariaDocePao.Location = new System.Drawing.Point(25, 47);
+            this.pBoxPadariaDocePao.Location = new System.Drawing.Point(21, 36);
             this.pBoxPadariaDocePao.Name = "pBoxPadariaDocePao";
             this.pBoxPadariaDocePao.Size = new System.Drawing.Size(105, 98);
             this.pBoxPadariaDocePao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBoxPadariaDocePao.TabIndex = 3;
+            this.pBoxPadariaDocePao.TabIndex = 6;
             this.pBoxPadariaDocePao.TabStop = false;
+            this.pBoxPadariaDocePao.Click += new System.EventHandler(this.pBoxPadariaDocePao_Click);
             // 
-            // FrmProdutos
+            // btGerarOrdem
+            // 
+            this.btGerarOrdem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btGerarOrdem.Location = new System.Drawing.Point(278, 390);
+            this.btGerarOrdem.Name = "btGerarOrdem";
+            this.btGerarOrdem.Size = new System.Drawing.Size(195, 36);
+            this.btGerarOrdem.TabIndex = 37;
+            this.btGerarOrdem.Text = "Gerar Ordem de Produção";
+            this.btGerarOrdem.UseVisualStyleBackColor = false;
+            // 
+            // btImprimirListaProducao
+            // 
+            this.btImprimirListaProducao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btImprimirListaProducao.Location = new System.Drawing.Point(479, 390);
+            this.btImprimirListaProducao.Name = "btImprimirListaProducao";
+            this.btImprimirListaProducao.Size = new System.Drawing.Size(195, 36);
+            this.btImprimirListaProducao.TabIndex = 38;
+            this.btImprimirListaProducao.Text = "Imprimir Lista de Produção";
+            this.btImprimirListaProducao.UseVisualStyleBackColor = false;
+            // 
+            // FrmPlanejamentoProdução
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(244)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btSalvar);
-            this.Controls.Add(this.dataView1);
-            this.Controls.Add(this.btExcluir);
-            this.Controls.Add(this.btAdicionar);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.InputPrecoVenda);
-            this.Controls.Add(this.inputCategoria);
-            this.Controls.Add(this.inputNomeProduto);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btImprimirListaProducao);
+            this.Controls.Add(this.btGerarOrdem);
             this.Controls.Add(this.pBoxPadariaDocePao);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dataView4);
             this.Controls.Add(this.menuPadariaDocePao);
-            this.Name = "FrmProdutos";
-            this.Text = "FrmProdutos";
+            this.Name = "FrmPlanejamentoProdução";
+            this.Text = "FrmPlanejamentoProdução";
             this.menuPadariaDocePao.ResumeLayout(false);
             this.menuPadariaDocePao.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -254,16 +193,10 @@
         private System.Windows.Forms.ToolStripMenuItem planejamentoDeProduçãoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configuraçõesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.DataGridView dataView4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.PictureBox pBoxPadariaDocePao;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox inputNomeProduto;
-        private System.Windows.Forms.TextBox inputCategoria;
-        private System.Windows.Forms.TextBox InputPrecoVenda;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btAdicionar;
-        private System.Windows.Forms.Button btExcluir;
-        private System.Windows.Forms.DataGridView dataView1;
-        private System.Windows.Forms.Button btSalvar;
+        private System.Windows.Forms.Button btGerarOrdem;
+        private System.Windows.Forms.Button btImprimirListaProducao;
     }
 }

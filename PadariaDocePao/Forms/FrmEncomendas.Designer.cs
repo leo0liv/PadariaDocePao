@@ -36,7 +36,6 @@
             this.planejamentoDeProduçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuraçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pBoxPadariaDocePao = new System.Windows.Forms.PictureBox();
             this.inputNivelMinimo = new System.Windows.Forms.TextBox();
             this.lbDataEntregaEncomenda = new System.Windows.Forms.Label();
             this.lbQuantidadeEncomenda = new System.Windows.Forms.Label();
@@ -52,9 +51,10 @@
             this.inputPesquisarCliente = new System.Windows.Forms.TextBox();
             this.lbProdutoEncomenda = new System.Windows.Forms.Label();
             this.inputPesquisarProduto = new System.Windows.Forms.TextBox();
+            this.pBoxPadariaDocePao = new System.Windows.Forms.PictureBox();
             this.menuPadariaDocePao.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).BeginInit();
             this.SuspendLayout();
             // 
             // menuPadariaDocePao
@@ -109,6 +109,7 @@
             this.planejamentoDeProduçãoToolStripMenuItem.Name = "planejamentoDeProduçãoToolStripMenuItem";
             this.planejamentoDeProduçãoToolStripMenuItem.Size = new System.Drawing.Size(162, 19);
             this.planejamentoDeProduçãoToolStripMenuItem.Text = "Planejamento de Produção";
+            this.planejamentoDeProduçãoToolStripMenuItem.Click += new System.EventHandler(this.planejamentoDeProduçãoToolStripMenuItem_Click);
             // 
             // configuraçõesToolStripMenuItem
             // 
@@ -122,16 +123,6 @@
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 19);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
-            // 
-            // pBoxPadariaDocePao
-            // 
-            this.pBoxPadariaDocePao.Image = global::PadariaDocePao.Properties.Resources.Paodoce;
-            this.pBoxPadariaDocePao.Location = new System.Drawing.Point(23, 36);
-            this.pBoxPadariaDocePao.Name = "pBoxPadariaDocePao";
-            this.pBoxPadariaDocePao.Size = new System.Drawing.Size(105, 98);
-            this.pBoxPadariaDocePao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBoxPadariaDocePao.TabIndex = 5;
-            this.pBoxPadariaDocePao.TabStop = false;
             // 
             // inputNivelMinimo
             // 
@@ -263,6 +254,16 @@
             this.inputPesquisarProduto.Size = new System.Drawing.Size(205, 20);
             this.inputPesquisarProduto.TabIndex = 37;
             // 
+            // pBoxPadariaDocePao
+            // 
+            this.pBoxPadariaDocePao.Image = global::PadariaDocePao.Properties.Resources.Paodoce;
+            this.pBoxPadariaDocePao.Location = new System.Drawing.Point(23, 36);
+            this.pBoxPadariaDocePao.Name = "pBoxPadariaDocePao";
+            this.pBoxPadariaDocePao.Size = new System.Drawing.Size(105, 98);
+            this.pBoxPadariaDocePao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxPadariaDocePao.TabIndex = 5;
+            this.pBoxPadariaDocePao.TabStop = false;
+            // 
             // FrmEncomendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -290,8 +291,8 @@
             this.Text = "FrmEncomendas";
             this.menuPadariaDocePao.ResumeLayout(false);
             this.menuPadariaDocePao.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

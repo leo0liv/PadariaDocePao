@@ -111,6 +111,7 @@
             this.planejamentoDeProduçãoToolStripMenuItem.Name = "planejamentoDeProduçãoToolStripMenuItem";
             this.planejamentoDeProduçãoToolStripMenuItem.Size = new System.Drawing.Size(162, 19);
             this.planejamentoDeProduçãoToolStripMenuItem.Text = "Planejamento de Produção";
+            this.planejamentoDeProduçãoToolStripMenuItem.Click += new System.EventHandler(this.planejamentoDeProduçãoToolStripMenuItem_Click);
             // 
             // configuraçõesToolStripMenuItem
             // 
@@ -192,6 +193,7 @@
             this.btPlanejamentoProducao.TabIndex = 2;
             this.btPlanejamentoProducao.Text = "PLANEJAMENTO DE PRODUÇÃO";
             this.btPlanejamentoProducao.UseVisualStyleBackColor = false;
+            this.btPlanejamentoProducao.Click += new System.EventHandler(this.btPlanejamentoProducao_Click);
             // 
             // panel4
             // 

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace PadariaDocePao
 {
-    public partial class FrmMateriaPrima: Form
+    public partial class FrmPlanejamentoProdução: Form
     {
-        public FrmMateriaPrima()
+        public FrmPlanejamentoProdução()
         {
             InitializeComponent();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
         private void pBoxPadariaDocePao_Click(object sender, EventArgs e)
@@ -22,8 +27,9 @@ namespace PadariaDocePao
 
         }
 
-        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        private void inícioToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
             this.Close();
         }
 
@@ -31,13 +37,6 @@ namespace PadariaDocePao
         {
             FrmProdutos frmProdutos = new FrmProdutos();
             frmProdutos.Show();
-        }
-
-        private void inícioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
-            this.Close();
-            frmTelaPrincipal.Show();
         }
 
         private void matériasPrimasToolStripMenuItem_Click(object sender, EventArgs e)
@@ -56,6 +55,11 @@ namespace PadariaDocePao
         {
             FrmPlanejamentoProdução frmPlanejamentoProdução = new FrmPlanejamentoProdução();
             frmPlanejamentoProdução.Show();
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

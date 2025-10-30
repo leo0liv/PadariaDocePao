@@ -46,5 +46,11 @@ namespace PadariaDocePao
         {
             this.Close();
         }
+
+        private void planejamentoDeProduçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPlanejamentoProdução frmPlanejamentoProdução = new FrmPlanejamentoProdução();
+            frmPlanejamentoProdução.Show();
+        }
     }
 }
