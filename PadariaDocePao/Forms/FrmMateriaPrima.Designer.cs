@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuPadariaDocePao = new System.Windows.Forms.MenuStrip();
             this.inícioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,14 +45,24 @@
             this.lbIngrediente = new System.Windows.Forms.Label();
             this.lbNivelMinimo = new System.Windows.Forms.Label();
             this.inputNivelMinimo = new System.Windows.Forms.TextBox();
-            this.dataView2 = new System.Windows.Forms.DataGridView();
+            this.dataTabelaMateria = new System.Windows.Forms.DataGridView();
             this.btSalvar = new System.Windows.Forms.Button();
             this.btExcluir = new System.Windows.Forms.Button();
             this.btAtualizar = new System.Windows.Forms.Button();
             this.pBoxPadariaDocePao = new System.Windows.Forms.PictureBox();
+            this.padariaDocePaoDataSet = new PadariaDocePao.PadariaDocePaoDataSet();
+            this.materiaPrimaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.materiaPrimaTableAdapter = new PadariaDocePao.PadariaDocePaoDataSetTableAdapters.MateriaPrimaTableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidadeEmEstoqueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nivelMinimoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuPadariaDocePao.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTabelaMateria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.padariaDocePaoDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materiaPrimaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuPadariaDocePao
@@ -185,13 +196,21 @@
             this.inputNivelMinimo.Size = new System.Drawing.Size(205, 20);
             this.inputNivelMinimo.TabIndex = 19;
             // 
-            // dataView2
+            // dataTabelaMateria
             // 
-            this.dataView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataView2.Location = new System.Drawing.Point(12, 149);
-            this.dataView2.Name = "dataView2";
-            this.dataView2.Size = new System.Drawing.Size(776, 225);
-            this.dataView2.TabIndex = 20;
+            this.dataTabelaMateria.AutoGenerateColumns = false;
+            this.dataTabelaMateria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataTabelaMateria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.nomeDataGridViewTextBoxColumn,
+            this.unidadeDataGridViewTextBoxColumn,
+            this.quantidadeEmEstoqueDataGridViewTextBoxColumn,
+            this.nivelMinimoDataGridViewTextBoxColumn});
+            this.dataTabelaMateria.DataSource = this.materiaPrimaBindingSource;
+            this.dataTabelaMateria.Location = new System.Drawing.Point(12, 149);
+            this.dataTabelaMateria.Name = "dataTabelaMateria";
+            this.dataTabelaMateria.Size = new System.Drawing.Size(776, 225);
+            this.dataTabelaMateria.TabIndex = 20;
             // 
             // btSalvar
             // 
@@ -204,6 +223,7 @@
             this.btSalvar.TabIndex = 23;
             this.btSalvar.Text = "Salvar";
             this.btSalvar.UseVisualStyleBackColor = false;
+            this.btSalvar.Click += new System.EventHandler(this.btSalvar_Click);
             // 
             // btExcluir
             // 
@@ -216,6 +236,7 @@
             this.btExcluir.TabIndex = 22;
             this.btExcluir.Text = "Excluir";
             this.btExcluir.UseVisualStyleBackColor = false;
+            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
             // 
             // btAtualizar
             // 
@@ -228,6 +249,7 @@
             this.btAtualizar.TabIndex = 21;
             this.btAtualizar.Text = "Atualizar Estoque";
             this.btAtualizar.UseVisualStyleBackColor = false;
+            this.btAtualizar.Click += new System.EventHandler(this.btAtualizar_Click);
             // 
             // pBoxPadariaDocePao
             // 
@@ -240,6 +262,51 @@
             this.pBoxPadariaDocePao.TabStop = false;
             this.pBoxPadariaDocePao.Click += new System.EventHandler(this.pBoxPadariaDocePao_Click);
             // 
+            // padariaDocePaoDataSet
+            // 
+            this.padariaDocePaoDataSet.DataSetName = "PadariaDocePaoDataSet";
+            this.padariaDocePaoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // materiaPrimaBindingSource
+            // 
+            this.materiaPrimaBindingSource.DataMember = "MateriaPrima";
+            this.materiaPrimaBindingSource.DataSource = this.padariaDocePaoDataSet;
+            // 
+            // materiaPrimaTableAdapter
+            // 
+            this.materiaPrimaTableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            // 
+            // unidadeDataGridViewTextBoxColumn
+            // 
+            this.unidadeDataGridViewTextBoxColumn.DataPropertyName = "Unidade";
+            this.unidadeDataGridViewTextBoxColumn.HeaderText = "Unidade";
+            this.unidadeDataGridViewTextBoxColumn.Name = "unidadeDataGridViewTextBoxColumn";
+            // 
+            // quantidadeEmEstoqueDataGridViewTextBoxColumn
+            // 
+            this.quantidadeEmEstoqueDataGridViewTextBoxColumn.DataPropertyName = "QuantidadeEmEstoque";
+            this.quantidadeEmEstoqueDataGridViewTextBoxColumn.HeaderText = "QuantidadeEmEstoque";
+            this.quantidadeEmEstoqueDataGridViewTextBoxColumn.Name = "quantidadeEmEstoqueDataGridViewTextBoxColumn";
+            // 
+            // nivelMinimoDataGridViewTextBoxColumn
+            // 
+            this.nivelMinimoDataGridViewTextBoxColumn.DataPropertyName = "NivelMinimo";
+            this.nivelMinimoDataGridViewTextBoxColumn.HeaderText = "NivelMinimo";
+            this.nivelMinimoDataGridViewTextBoxColumn.Name = "nivelMinimoDataGridViewTextBoxColumn";
+            // 
             // FrmMateriaPrima
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -249,7 +316,7 @@
             this.Controls.Add(this.btSalvar);
             this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.btAtualizar);
-            this.Controls.Add(this.dataView2);
+            this.Controls.Add(this.dataTabelaMateria);
             this.Controls.Add(this.inputNivelMinimo);
             this.Controls.Add(this.lbNivelMinimo);
             this.Controls.Add(this.lbEstoque);
@@ -262,10 +329,13 @@
             this.Controls.Add(this.menuPadariaDocePao);
             this.Name = "FrmMateriaPrima";
             this.Text = "FrmMateriaPrima";
+            this.Load += new System.EventHandler(this.FrmMateriaPrima_Load);
             this.menuPadariaDocePao.ResumeLayout(false);
             this.menuPadariaDocePao.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTabelaMateria)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.padariaDocePaoDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materiaPrimaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,9 +360,17 @@
         private System.Windows.Forms.Label lbIngrediente;
         private System.Windows.Forms.Label lbNivelMinimo;
         private System.Windows.Forms.TextBox inputNivelMinimo;
-        private System.Windows.Forms.DataGridView dataView2;
+        private System.Windows.Forms.DataGridView dataTabelaMateria;
         private System.Windows.Forms.Button btSalvar;
         private System.Windows.Forms.Button btExcluir;
         private System.Windows.Forms.Button btAtualizar;
+        private PadariaDocePaoDataSet padariaDocePaoDataSet;
+        private System.Windows.Forms.BindingSource materiaPrimaBindingSource;
+        private PadariaDocePaoDataSetTableAdapters.MateriaPrimaTableAdapter materiaPrimaTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unidadeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantidadeEmEstoqueDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nivelMinimoDataGridViewTextBoxColumn;
     }
 }

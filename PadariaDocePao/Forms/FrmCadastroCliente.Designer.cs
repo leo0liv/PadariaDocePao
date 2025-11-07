@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuPadariaDocePao = new System.Windows.Forms.MenuStrip();
             this.inícioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,15 +45,24 @@
             this.inputTelefoneCliente = new System.Windows.Forms.TextBox();
             this.inputNomeCliente = new System.Windows.Forms.TextBox();
             this.lbNomeCliente = new System.Windows.Forms.Label();
-            this.pBoxPadariaDocePao = new System.Windows.Forms.PictureBox();
             this.lbObservacao = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataTabelaCliente = new System.Windows.Forms.DataGridView();
             this.btSalvar = new System.Windows.Forms.Button();
             this.btExcluir = new System.Windows.Forms.Button();
             this.btEditarCliente = new System.Windows.Forms.Button();
+            this.padariaDocePaoDataSet = new PadariaDocePao.PadariaDocePaoDataSet();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clienteTableAdapter = new PadariaDocePao.PadariaDocePaoDataSetTableAdapters.ClienteTableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enderecoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pBoxPadariaDocePao = new System.Windows.Forms.PictureBox();
             this.menuPadariaDocePao.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTabelaCliente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.padariaDocePaoDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuPadariaDocePao
@@ -186,16 +196,6 @@
             this.lbNomeCliente.TabIndex = 21;
             this.lbNomeCliente.Text = "NOME DO CLIENTE";
             // 
-            // pBoxPadariaDocePao
-            // 
-            this.pBoxPadariaDocePao.Image = global::PadariaDocePao.Properties.Resources.Paodoce;
-            this.pBoxPadariaDocePao.Location = new System.Drawing.Point(21, 36);
-            this.pBoxPadariaDocePao.Name = "pBoxPadariaDocePao";
-            this.pBoxPadariaDocePao.Size = new System.Drawing.Size(105, 98);
-            this.pBoxPadariaDocePao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pBoxPadariaDocePao.TabIndex = 20;
-            this.pBoxPadariaDocePao.TabStop = false;
-            // 
             // lbObservacao
             // 
             this.lbObservacao.AutoSize = true;
@@ -205,13 +205,21 @@
             this.lbObservacao.TabIndex = 29;
             this.lbObservacao.Text = "OBSERVAÇÕES";
             // 
-            // dataGridView1
+            // dataTabelaCliente
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 156);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 221);
-            this.dataGridView1.TabIndex = 30;
+            this.dataTabelaCliente.AutoGenerateColumns = false;
+            this.dataTabelaCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataTabelaCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.nomeDataGridViewTextBoxColumn,
+            this.telefoneDataGridViewTextBoxColumn,
+            this.enderecoDataGridViewTextBoxColumn});
+            this.dataTabelaCliente.DataSource = this.clienteBindingSource;
+            this.dataTabelaCliente.Location = new System.Drawing.Point(12, 156);
+            this.dataTabelaCliente.Name = "dataTabelaCliente";
+            this.dataTabelaCliente.Size = new System.Drawing.Size(776, 221);
+            this.dataTabelaCliente.TabIndex = 30;
+            this.dataTabelaCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btSalvar
             // 
@@ -224,6 +232,7 @@
             this.btSalvar.TabIndex = 33;
             this.btSalvar.Text = "Salvar";
             this.btSalvar.UseVisualStyleBackColor = false;
+            this.btSalvar.Click += new System.EventHandler(this.btSalvar_Click);
             // 
             // btExcluir
             // 
@@ -236,6 +245,7 @@
             this.btExcluir.TabIndex = 32;
             this.btExcluir.Text = "Excluir";
             this.btExcluir.UseVisualStyleBackColor = false;
+            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
             // 
             // btEditarCliente
             // 
@@ -248,6 +258,56 @@
             this.btEditarCliente.TabIndex = 31;
             this.btEditarCliente.Text = "Editar Cliente";
             this.btEditarCliente.UseVisualStyleBackColor = false;
+            this.btEditarCliente.Click += new System.EventHandler(this.btEditarCliente_Click);
+            // 
+            // padariaDocePaoDataSet
+            // 
+            this.padariaDocePaoDataSet.DataSetName = "PadariaDocePaoDataSet";
+            this.padariaDocePaoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataMember = "Cliente";
+            this.clienteBindingSource.DataSource = this.padariaDocePaoDataSet;
+            // 
+            // clienteTableAdapter
+            // 
+            this.clienteTableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nomeDataGridViewTextBoxColumn
+            // 
+            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
+            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
+            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
+            // 
+            // telefoneDataGridViewTextBoxColumn
+            // 
+            this.telefoneDataGridViewTextBoxColumn.DataPropertyName = "Telefone";
+            this.telefoneDataGridViewTextBoxColumn.HeaderText = "Telefone";
+            this.telefoneDataGridViewTextBoxColumn.Name = "telefoneDataGridViewTextBoxColumn";
+            // 
+            // enderecoDataGridViewTextBoxColumn
+            // 
+            this.enderecoDataGridViewTextBoxColumn.DataPropertyName = "Endereco";
+            this.enderecoDataGridViewTextBoxColumn.HeaderText = "Endereco";
+            this.enderecoDataGridViewTextBoxColumn.Name = "enderecoDataGridViewTextBoxColumn";
+            // 
+            // pBoxPadariaDocePao
+            // 
+            this.pBoxPadariaDocePao.Image = global::PadariaDocePao.Properties.Resources.Paodoce;
+            this.pBoxPadariaDocePao.Location = new System.Drawing.Point(21, 36);
+            this.pBoxPadariaDocePao.Name = "pBoxPadariaDocePao";
+            this.pBoxPadariaDocePao.Size = new System.Drawing.Size(105, 98);
+            this.pBoxPadariaDocePao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxPadariaDocePao.TabIndex = 20;
+            this.pBoxPadariaDocePao.TabStop = false;
             // 
             // FrmCadastroCliente
             // 
@@ -258,7 +318,7 @@
             this.Controls.Add(this.btSalvar);
             this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.btEditarCliente);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataTabelaCliente);
             this.Controls.Add(this.lbObservacao);
             this.Controls.Add(this.inputEnderecoCliente);
             this.Controls.Add(this.lbEnderecoCliente);
@@ -272,10 +332,13 @@
             this.Controls.Add(this.menuPadariaDocePao);
             this.Name = "FrmCadastroCliente";
             this.Text = "FrmCadastroCliente";
+            this.Load += new System.EventHandler(this.FrmCadastroCliente_Load);
             this.menuPadariaDocePao.ResumeLayout(false);
             this.menuPadariaDocePao.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTabelaCliente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.padariaDocePaoDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,9 +364,16 @@
         private System.Windows.Forms.Label lbNomeCliente;
         private System.Windows.Forms.PictureBox pBoxPadariaDocePao;
         private System.Windows.Forms.Label lbObservacao;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataTabelaCliente;
         private System.Windows.Forms.Button btSalvar;
         private System.Windows.Forms.Button btExcluir;
         private System.Windows.Forms.Button btEditarCliente;
+        private PadariaDocePaoDataSet padariaDocePaoDataSet;
+        private System.Windows.Forms.BindingSource clienteBindingSource;
+        private PadariaDocePaoDataSetTableAdapters.ClienteTableAdapter clienteTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enderecoDataGridViewTextBoxColumn;
     }
 }
