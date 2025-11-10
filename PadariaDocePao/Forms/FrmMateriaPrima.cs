@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -14,38 +13,18 @@ namespace PadariaDocePao
 {
     public partial class FrmMateriaPrima: Form
     {
-        private int? _idMateriaPrimaParaAlterar = null;
         public FrmMateriaPrima()
         {
             InitializeComponent();
-        
         }
         public FrmMateriaPrima(int idMateriaPrima) : this() // O ": this()" chama o construtor padrão primeiro
         {
             _idMateriaPrimaParaAlterar = idMateriaPrima;
             CarregarDadosParaEdicao();
         }
-        private void CarregarMateriaPrima()
-        {
-            try
-            {
-                // Esta linha busca os dados do banco e atualiza a grade
-                this.materiaPrimaTableAdapter.Fill(this.padariaDocePaoDataSet.MateriaPrima);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao carregar Materia Prima: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
         private void CarregarDadosParaEdicao()
         {
-            this.Text = "Alterar Cliente"; // Muda o título do formulário
-            pBoxPadariaDocePao.Text = "Alterar Cliente";// Muda o título da página lbCadastro
-
-            string connectionString = ConfigurationManager.ConnectionStrings["PadariaDocePao.Properties.Settings.PadariaDocePaoConnectionString"].ConnectionString;
-
-
             try
             {
                 using (SqlConnection conexao = new SqlConnection(connectionString))
@@ -70,14 +49,6 @@ namespace PadariaDocePao
                             }
                         }
                     }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao carregar dados da materia prima: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.Close(); // Fecha o formulário se não conseguir carregar os dados
-            }
-        }
 
         private void pBoxPadariaDocePao_Click(object sender, EventArgs e)
         {
@@ -136,30 +107,6 @@ namespace PadariaDocePao
                 MessageBox.Show("Por favor, preencha os campos Nome Ingreditente e Quantidades.", "Campos Obrigatórios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            //conexão com o banco de dados
-            string connectionString = ConfigurationManager.ConnectionStrings["PadariaDocePao.Properties.Settings.PadariaDocePaoConnectionString"].ConnectionString;
-
-            // A lógica principal: o formulário está em modo de cadastro ou de alteração?
-            if (_idMateriaPrimaParaAlterar == null)
-            {
-                // ===================================================================
-                // MODO CADASTRO (INSERT)
-                // ===================================================================
-                try
-                {
-                    string suaConnectionString = ConfigurationManager.ConnectionStrings["PadariaDocePao.Properties.Settings.PadariaDocePaoConnectionString"].ConnectionString;
-
-                    using (SqlConnection conexao = new SqlConnection(suaConnectionString))
-                    {
-                        conexao.Open();// abre a conexão e insere os dados
-                        string sqlInsert = @"INSERT INTO MateriaPrima (Nome, Unidade, QuantidadeEmEstoque, NivelMinimo) VALUES (@nome, @unidade, @quantidade, @nivel)";
-
-                        using (SqlCommand comando = new SqlCommand(sqlInsert, conexao))
-                        {
-                            comando.Parameters.AddWithValue("@nome", inputNomeIgrediente.Text);
-                            comando.Parameters.AddWithValue("@unidade", inputUnidadeMedida.Text);
-                            comando.Parameters.AddWithValue("@quantidade", inputQtdEstoque.Text);
-                            comando.Parameters.AddWithValue("@nivel", inputNivelMinimo.Text);
 
                             int linhasAfetadas = comando.ExecuteNonQuery();
 
@@ -177,25 +124,7 @@ namespace PadariaDocePao
                 }
                 catch (SqlException ex)
                 {
-                    if (ex.Number == 2627 || ex.Number == 2601)
                     {
-                        MessageBox.Show("Erro ao cadastrar: O Nome '" + inputNomeIgrediente.Text + "' já existe.", "Erro de Duplicidade", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Erro de banco de dados: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Ocorreu um erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            else
-            {
-                // ===================================================================
-                // MODO ALTERAÇÃO (UPDATE) - para realizar as alterações 
-                // ===================================================================
                 try
                 {
                     using (SqlConnection conexao = new SqlConnection(connectionString))
@@ -256,10 +185,6 @@ namespace PadariaDocePao
             {
                 MessageBox.Show("O formulário já foi descartado e não pode ser reaberto.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            //formCadastro.ShowDialog(); // ShowDialog() pausa a tela de consulta até o cadastro ser fechado
-
-            // 4. Após o formulário de cadastro fechar, atualizamos a grade
-            CarregarMateriaPrima(); // Chame o método que carrega os dados
         }
 
         private void btExcluir_Click(object sender, EventArgs e)
@@ -298,19 +223,7 @@ namespace PadariaDocePao
 
                             if (linhasAfetadas > 0)
                             {
-                                MessageBox.Show("Materia Prima excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                                // AQUI ESTÁ A RESPOSTA: Chame o método para atualizar a grade
-                                CarregarMateriaPrima();
-                            }
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Erro ao excluir uma materia prima: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
         }
     }
 }
