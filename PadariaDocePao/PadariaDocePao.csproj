@@ -171,6 +171,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConexaoBD.cs" />
     <Compile Include="Forms\FrmTelaPrincipal .cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,11 +184,17 @@
     <Compile Include="Forms\FrmTelaLogin.Designer.cs">
       <DependentUpon>FrmTelaLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmProdutos.cs">
+    <Compile Include="Forms\FrmCadastrarProduto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmProdutos.Designer.cs">
-      <DependentUpon>FrmProdutos.cs</DependentUpon>
+    <Compile Include="Forms\FrmCadastrarProduto.Designer.cs">
+      <DependentUpon>FrmCadastrarProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmEncomenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmEncomenda.Designer.cs">
+      <DependentUpon>FrmEncomenda.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmMateriaPrima.cs">
       <SubType>Form</SubType>
@@ -195,60 +202,59 @@
     <Compile Include="Forms\FrmMateriaPrima.Designer.cs">
       <DependentUpon>FrmMateriaPrima.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmEncomendas.cs">
+    <Compile Include="Forms\FrmPainelProducao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmEncomendas.Designer.cs">
-      <DependentUpon>FrmEncomendas.cs</DependentUpon>
+    <Compile Include="Forms\FrmPainelProducao.Designer.cs">
+      <DependentUpon>FrmPainelProducao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmCadastroCliente.cs">
+    <Compile Include="FrmConsultarEncomendas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmCadastroCliente.Designer.cs">
-      <DependentUpon>FrmCadastroCliente.cs</DependentUpon>
+    <Compile Include="FrmConsultarEncomendas.Designer.cs">
+      <DependentUpon>FrmConsultarEncomendas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmPlanejamentoProdução.cs">
+    <Compile Include="FrmReceitas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmPlanejamentoProdução.Designer.cs">
-      <DependentUpon>FrmPlanejamentoProdução.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmRelatorios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmRelatorios.Designer.cs">
-      <DependentUpon>FrmRelatorios.cs</DependentUpon>
+    <Compile Include="FrmReceitas.Designer.cs">
+      <DependentUpon>FrmReceitas.cs</DependentUpon>
     </Compile>
     <Compile Include="PadariaDocePaoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PadariaDocePaoDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PadariaDocePaoDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PadariaDocePaoDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\FrmEncomendas.resx">
-      <DependentUpon>FrmEncomendas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmMateriaPrima.resx">
-      <DependentUpon>FrmMateriaPrima.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmProdutos.resx">
-      <DependentUpon>FrmProdutos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmTelaLogin.resx">
       <DependentUpon>FrmTelaLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmTelaPrincipal .resx">
       <DependentUpon>FrmTelaPrincipal .cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmCadastroCliente.resx">
-      <DependentUpon>FrmCadastroCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmCadastrarProduto.resx">
+      <DependentUpon>FrmCadastrarProduto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmPlanejamentoProdução.resx">
-      <DependentUpon>FrmPlanejamentoProdução.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmEncomenda.resx">
+      <DependentUpon>FrmEncomenda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmRelatorios.resx">
-      <DependentUpon>FrmRelatorios.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmMateriaPrima.resx">
+      <DependentUpon>FrmMateriaPrima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmPainelProducao.resx">
+      <DependentUpon>FrmPainelProducao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultarEncomendas.resx">
+      <DependentUpon>FrmConsultarEncomendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReceitas.resx">
+      <DependentUpon>FrmReceitas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -271,6 +277,17 @@
     </None>
     <None Include="PadariaDocePaoDataSet.xss">
       <DependentUpon>PadariaDocePaoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PadariaDocePaoDataSet1.xsc">
+      <DependentUpon>PadariaDocePaoDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PadariaDocePaoDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PadariaDocePaoDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PadariaDocePaoDataSet1.xss">
+      <DependentUpon>PadariaDocePaoDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -20,9 +20,9 @@ namespace PadariaDocePao {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("PadariaDocePaoDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("PadariaDocePaoDataSet1")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class PadariaDocePaoDataSet : global::System.Data.DataSet {
+    public partial class PadariaDocePaoDataSet1 : global::System.Data.DataSet {
         
         private ClienteDataTable tableCliente;
         
@@ -46,7 +46,7 @@ namespace PadariaDocePao {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public PadariaDocePaoDataSet() {
+        public PadariaDocePaoDataSet1() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -57,7 +57,7 @@ namespace PadariaDocePao {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected PadariaDocePaoDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected PadariaDocePaoDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -195,7 +195,7 @@ namespace PadariaDocePao {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            PadariaDocePaoDataSet cln = ((PadariaDocePaoDataSet)(base.Clone()));
+            PadariaDocePaoDataSet1 cln = ((PadariaDocePaoDataSet1)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -307,9 +307,9 @@ namespace PadariaDocePao {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "PadariaDocePaoDataSet";
+            this.DataSetName = "PadariaDocePaoDataSet1";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/PadariaDocePaoDataSet.xsd";
+            this.Namespace = "http://tempuri.org/PadariaDocePaoDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableCliente = new ClienteDataTable();
@@ -381,7 +381,7 @@ namespace PadariaDocePao {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            PadariaDocePaoDataSet ds = new PadariaDocePaoDataSet();
+            PadariaDocePaoDataSet1 ds = new PadariaDocePaoDataSet1();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -674,7 +674,7 @@ namespace PadariaDocePao {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                PadariaDocePaoDataSet ds = new PadariaDocePaoDataSet();
+                PadariaDocePaoDataSet1 ds = new PadariaDocePaoDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1030,7 +1030,7 @@ namespace PadariaDocePao {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                PadariaDocePaoDataSet ds = new PadariaDocePaoDataSet();
+                PadariaDocePaoDataSet1 ds = new PadariaDocePaoDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1341,7 +1341,7 @@ namespace PadariaDocePao {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                PadariaDocePaoDataSet ds = new PadariaDocePaoDataSet();
+                PadariaDocePaoDataSet1 ds = new PadariaDocePaoDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1413,8 +1413,6 @@ namespace PadariaDocePao {
             
             private global::System.Data.DataColumn columnUnidadeMedida;
             
-            private global::System.Data.DataColumn columnEstoqueAtual;
-            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public MateriaPrimaDataTable() {
@@ -1474,14 +1472,6 @@ namespace PadariaDocePao {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn EstoqueAtualColumn {
-                get {
-                    return this.columnEstoqueAtual;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1517,13 +1507,12 @@ namespace PadariaDocePao {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public MateriaPrimaRow AddMateriaPrimaRow(string Nome, string UnidadeMedida, decimal EstoqueAtual) {
+            public MateriaPrimaRow AddMateriaPrimaRow(string Nome, string UnidadeMedida) {
                 MateriaPrimaRow rowMateriaPrimaRow = ((MateriaPrimaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         Nome,
-                        UnidadeMedida,
-                        EstoqueAtual};
+                        UnidadeMedida};
                 rowMateriaPrimaRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowMateriaPrimaRow);
                 return rowMateriaPrimaRow;
@@ -1556,7 +1545,6 @@ namespace PadariaDocePao {
                 this.columnId = base.Columns["Id"];
                 this.columnNome = base.Columns["Nome"];
                 this.columnUnidadeMedida = base.Columns["UnidadeMedida"];
-                this.columnEstoqueAtual = base.Columns["EstoqueAtual"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1568,8 +1556,6 @@ namespace PadariaDocePao {
                 base.Columns.Add(this.columnNome);
                 this.columnUnidadeMedida = new global::System.Data.DataColumn("UnidadeMedida", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnUnidadeMedida);
-                this.columnEstoqueAtual = new global::System.Data.DataColumn("EstoqueAtual", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEstoqueAtual);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId}, true));
                 this.columnId.AutoIncrement = true;
@@ -1581,7 +1567,6 @@ namespace PadariaDocePao {
                 this.columnNome.AllowDBNull = false;
                 this.columnNome.MaxLength = 100;
                 this.columnUnidadeMedida.MaxLength = 10;
-                this.columnEstoqueAtual.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1649,7 +1634,7 @@ namespace PadariaDocePao {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                PadariaDocePaoDataSet ds = new PadariaDocePaoDataSet();
+                PadariaDocePaoDataSet1 ds = new PadariaDocePaoDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1955,7 +1940,7 @@ namespace PadariaDocePao {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                PadariaDocePaoDataSet ds = new PadariaDocePaoDataSet();
+                PadariaDocePaoDataSet1 ds = new PadariaDocePaoDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2441,17 +2426,6 @@ namespace PadariaDocePao {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal EstoqueAtual {
-                get {
-                    return ((decimal)(this[this.tableMateriaPrima.EstoqueAtualColumn]));
-                }
-                set {
-                    this[this.tableMateriaPrima.EstoqueAtualColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsUnidadeMedidaNull() {
                 return this.IsNull(this.tableMateriaPrima.UnidadeMedidaColumn);
             }
@@ -2760,7 +2734,7 @@ namespace PadariaDocePao {
         }
     }
 }
-namespace PadariaDocePao.PadariaDocePaoDataSetTableAdapters {
+namespace PadariaDocePao.PadariaDocePaoDataSet1TableAdapters {
     
     
     /// <summary>
@@ -3029,7 +3003,7 @@ SELECT Id, Nome, Telefone FROM Cliente WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(PadariaDocePaoDataSet.ClienteDataTable dataTable) {
+        public virtual int Fill(PadariaDocePaoDataSet1.ClienteDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3042,9 +3016,9 @@ SELECT Id, Nome, Telefone FROM Cliente WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual PadariaDocePaoDataSet.ClienteDataTable GetData() {
+        public virtual PadariaDocePaoDataSet1.ClienteDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            PadariaDocePaoDataSet.ClienteDataTable dataTable = new PadariaDocePaoDataSet.ClienteDataTable();
+            PadariaDocePaoDataSet1.ClienteDataTable dataTable = new PadariaDocePaoDataSet1.ClienteDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -3052,14 +3026,14 @@ SELECT Id, Nome, Telefone FROM Cliente WHERE (Id = @Id)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PadariaDocePaoDataSet.ClienteDataTable dataTable) {
+        public virtual int Update(PadariaDocePaoDataSet1.ClienteDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PadariaDocePaoDataSet dataSet) {
+        public virtual int Update(PadariaDocePaoDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "Cliente");
         }
         
@@ -3648,7 +3622,7 @@ SELECT Id, DataEntrega, Quantidade, Observacao, Id_Cliente, Id_Produto, Status F
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(PadariaDocePaoDataSet.EncomendaDataTable dataTable) {
+        public virtual int Fill(PadariaDocePaoDataSet1.EncomendaDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3661,9 +3635,9 @@ SELECT Id, DataEntrega, Quantidade, Observacao, Id_Cliente, Id_Produto, Status F
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual PadariaDocePaoDataSet.EncomendaDataTable GetData() {
+        public virtual PadariaDocePaoDataSet1.EncomendaDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            PadariaDocePaoDataSet.EncomendaDataTable dataTable = new PadariaDocePaoDataSet.EncomendaDataTable();
+            PadariaDocePaoDataSet1.EncomendaDataTable dataTable = new PadariaDocePaoDataSet1.EncomendaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -3671,14 +3645,14 @@ SELECT Id, DataEntrega, Quantidade, Observacao, Id_Cliente, Id_Produto, Status F
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PadariaDocePaoDataSet.EncomendaDataTable dataTable) {
+        public virtual int Update(PadariaDocePaoDataSet1.EncomendaDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PadariaDocePaoDataSet dataSet) {
+        public virtual int Update(PadariaDocePaoDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "Encomenda");
         }
         
@@ -4206,7 +4180,7 @@ SELECT Id, Id_Produto, Id_MateriaPrima, Quantidade FROM FichaTecnica WHERE (Id =
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(PadariaDocePaoDataSet.FichaTecnicaDataTable dataTable) {
+        public virtual int Fill(PadariaDocePaoDataSet1.FichaTecnicaDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4219,9 +4193,9 @@ SELECT Id, Id_Produto, Id_MateriaPrima, Quantidade FROM FichaTecnica WHERE (Id =
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual PadariaDocePaoDataSet.FichaTecnicaDataTable GetData() {
+        public virtual PadariaDocePaoDataSet1.FichaTecnicaDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            PadariaDocePaoDataSet.FichaTecnicaDataTable dataTable = new PadariaDocePaoDataSet.FichaTecnicaDataTable();
+            PadariaDocePaoDataSet1.FichaTecnicaDataTable dataTable = new PadariaDocePaoDataSet1.FichaTecnicaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4229,14 +4203,14 @@ SELECT Id, Id_Produto, Id_MateriaPrima, Quantidade FROM FichaTecnica WHERE (Id =
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PadariaDocePaoDataSet.FichaTecnicaDataTable dataTable) {
+        public virtual int Update(PadariaDocePaoDataSet1.FichaTecnicaDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PadariaDocePaoDataSet dataSet) {
+        public virtual int Update(PadariaDocePaoDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "FichaTecnica");
         }
         
@@ -4514,14 +4488,12 @@ SELECT Id, Id_Produto, Id_MateriaPrima, Quantidade FROM FichaTecnica WHERE (Id =
             tableMapping.ColumnMappings.Add("Id", "Id");
             tableMapping.ColumnMappings.Add("Nome", "Nome");
             tableMapping.ColumnMappings.Add("UnidadeMedida", "UnidadeMedida");
-            tableMapping.ColumnMappings.Add("EstoqueAtual", "EstoqueAtual");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::Microsoft.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
             this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[MateriaPrima] WHERE (([Id] = @Original_Id) AND ([Nome] = @Orig" +
                 "inal_Nome) AND ((@IsNull_UnidadeMedida = 1 AND [UnidadeMedida] IS NULL) OR ([Uni" +
-                "dadeMedida] = @Original_UnidadeMedida)) AND ([EstoqueAtual] = @Original_EstoqueA" +
-                "tual))";
+                "dadeMedida] = @Original_UnidadeMedida)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             global::Microsoft.Data.SqlClient.SqlParameter param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@Original_Id";
@@ -4556,19 +4528,11 @@ SELECT Id, Id_Produto, Id_MateriaPrima, Quantidade FROM FichaTecnica WHERE (Id =
             param.SourceColumn = "UnidadeMedida";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.DeleteCommand.Parameters.Add(param);
-            param = new global::Microsoft.Data.SqlClient.SqlParameter();
-            param.ParameterName = "@Original_EstoqueAtual";
-            param.DbType = global::System.Data.DbType.Decimal;
-            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
-            param.IsNullable = true;
-            param.SourceColumn = "EstoqueAtual";
-            param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            this._adapter.DeleteCommand.Parameters.Add(param);
             this._adapter.InsertCommand = new global::Microsoft.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[MateriaPrima] ([Nome], [UnidadeMedida], [EstoqueAtual]) VALUES" +
-                " (@Nome, @UnidadeMedida, @EstoqueAtual);\r\nSELECT Id, Nome, UnidadeMedida, Estoqu" +
-                "eAtual FROM MateriaPrima WHERE (Id = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[MateriaPrima] ([Nome], [UnidadeMedida]) VALUES (@Nome, @Unidad" +
+                "eMedida);\r\nSELECT Id, Nome, UnidadeMedida FROM MateriaPrima WHERE (Id = SCOPE_ID" +
+                "ENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@Nome";
@@ -4584,17 +4548,10 @@ SELECT Id, Id_Produto, Id_MateriaPrima, Quantidade FROM FichaTecnica WHERE (Id =
             param.IsNullable = true;
             param.SourceColumn = "UnidadeMedida";
             this._adapter.InsertCommand.Parameters.Add(param);
-            param = new global::Microsoft.Data.SqlClient.SqlParameter();
-            param.ParameterName = "@EstoqueAtual";
-            param.DbType = global::System.Data.DbType.Decimal;
-            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
-            param.IsNullable = true;
-            param.SourceColumn = "EstoqueAtual";
-            this._adapter.InsertCommand.Parameters.Add(param);
             this._adapter.UpdateCommand = new global::Microsoft.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[MateriaPrima] SET [Nome] = @Nome, [UnidadeMedida] = @UnidadeMedida, [EstoqueAtual] = @EstoqueAtual WHERE (([Id] = @Original_Id) AND ([Nome] = @Original_Nome) AND ((@IsNull_UnidadeMedida = 1 AND [UnidadeMedida] IS NULL) OR ([UnidadeMedida] = @Original_UnidadeMedida)) AND ([EstoqueAtual] = @Original_EstoqueAtual));
-SELECT Id, Nome, UnidadeMedida, EstoqueAtual FROM MateriaPrima WHERE (Id = @Id)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[MateriaPrima] SET [Nome] = @Nome, [UnidadeMedida] = @UnidadeMedida WHERE (([Id] = @Original_Id) AND ([Nome] = @Original_Nome) AND ((@IsNull_UnidadeMedida = 1 AND [UnidadeMedida] IS NULL) OR ([UnidadeMedida] = @Original_UnidadeMedida)));
+SELECT Id, Nome, UnidadeMedida FROM MateriaPrima WHERE (Id = @Id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@Nome";
@@ -4609,13 +4566,6 @@ SELECT Id, Nome, UnidadeMedida, EstoqueAtual FROM MateriaPrima WHERE (Id = @Id)"
             param.SqlDbType = global::System.Data.SqlDbType.VarChar;
             param.IsNullable = true;
             param.SourceColumn = "UnidadeMedida";
-            this._adapter.UpdateCommand.Parameters.Add(param);
-            param = new global::Microsoft.Data.SqlClient.SqlParameter();
-            param.ParameterName = "@EstoqueAtual";
-            param.DbType = global::System.Data.DbType.Decimal;
-            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
-            param.IsNullable = true;
-            param.SourceColumn = "EstoqueAtual";
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@Original_Id";
@@ -4651,14 +4601,6 @@ SELECT Id, Nome, UnidadeMedida, EstoqueAtual FROM MateriaPrima WHERE (Id = @Id)"
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::Microsoft.Data.SqlClient.SqlParameter();
-            param.ParameterName = "@Original_EstoqueAtual";
-            param.DbType = global::System.Data.DbType.Decimal;
-            param.SqlDbType = global::System.Data.SqlDbType.Decimal;
-            param.IsNullable = true;
-            param.SourceColumn = "EstoqueAtual";
-            param.SourceVersion = global::System.Data.DataRowVersion.Original;
-            this._adapter.UpdateCommand.Parameters.Add(param);
-            param = new global::Microsoft.Data.SqlClient.SqlParameter();
             param.ParameterName = "@Id";
             param.DbType = global::System.Data.DbType.Int32;
             param.SqlDbType = global::System.Data.SqlDbType.Int;
@@ -4681,7 +4623,7 @@ SELECT Id, Nome, UnidadeMedida, EstoqueAtual FROM MateriaPrima WHERE (Id = @Id)"
             this._commandCollection = new global::Microsoft.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::Microsoft.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Id, Nome, UnidadeMedida, EstoqueAtual FROM dbo.MateriaPrima";
+            this._commandCollection[0].CommandText = "SELECT Id, Nome, UnidadeMedida FROM dbo.MateriaPrima";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -4689,7 +4631,7 @@ SELECT Id, Nome, UnidadeMedida, EstoqueAtual FROM MateriaPrima WHERE (Id = @Id)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(PadariaDocePaoDataSet.MateriaPrimaDataTable dataTable) {
+        public virtual int Fill(PadariaDocePaoDataSet1.MateriaPrimaDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4702,9 +4644,9 @@ SELECT Id, Nome, UnidadeMedida, EstoqueAtual FROM MateriaPrima WHERE (Id = @Id)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual PadariaDocePaoDataSet.MateriaPrimaDataTable GetData() {
+        public virtual PadariaDocePaoDataSet1.MateriaPrimaDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            PadariaDocePaoDataSet.MateriaPrimaDataTable dataTable = new PadariaDocePaoDataSet.MateriaPrimaDataTable();
+            PadariaDocePaoDataSet1.MateriaPrimaDataTable dataTable = new PadariaDocePaoDataSet1.MateriaPrimaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4712,14 +4654,14 @@ SELECT Id, Nome, UnidadeMedida, EstoqueAtual FROM MateriaPrima WHERE (Id = @Id)"
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PadariaDocePaoDataSet.MateriaPrimaDataTable dataTable) {
+        public virtual int Update(PadariaDocePaoDataSet1.MateriaPrimaDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PadariaDocePaoDataSet dataSet) {
+        public virtual int Update(PadariaDocePaoDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "MateriaPrima");
         }
         
@@ -4742,7 +4684,7 @@ SELECT Id, Nome, UnidadeMedida, EstoqueAtual FROM MateriaPrima WHERE (Id = @Id)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Id, string Original_Nome, string Original_UnidadeMedida, decimal Original_EstoqueAtual) {
+        public virtual int Delete(int Original_Id, string Original_Nome, string Original_UnidadeMedida) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id));
             if ((Original_Nome == null)) {
                 throw new global::System.ArgumentNullException("Original_Nome");
@@ -4758,7 +4700,6 @@ SELECT Id, Nome, UnidadeMedida, EstoqueAtual FROM MateriaPrima WHERE (Id = @Id)"
                 this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_UnidadeMedida));
             }
-            this.Adapter.DeleteCommand.Parameters[4].Value = ((decimal)(Original_EstoqueAtual));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -4779,7 +4720,7 @@ SELECT Id, Nome, UnidadeMedida, EstoqueAtual FROM MateriaPrima WHERE (Id = @Id)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Nome, string UnidadeMedida, decimal EstoqueAtual) {
+        public virtual int Insert(string Nome, string UnidadeMedida) {
             if ((Nome == null)) {
                 throw new global::System.ArgumentNullException("Nome");
             }
@@ -4792,7 +4733,6 @@ SELECT Id, Nome, UnidadeMedida, EstoqueAtual FROM MateriaPrima WHERE (Id = @Id)"
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(UnidadeMedida));
             }
-            this.Adapter.InsertCommand.Parameters[2].Value = ((decimal)(EstoqueAtual));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -4813,7 +4753,7 @@ SELECT Id, Nome, UnidadeMedida, EstoqueAtual FROM MateriaPrima WHERE (Id = @Id)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Nome, string UnidadeMedida, decimal EstoqueAtual, int Original_Id, string Original_Nome, string Original_UnidadeMedida, decimal Original_EstoqueAtual, int Id) {
+        public virtual int Update(string Nome, string UnidadeMedida, int Original_Id, string Original_Nome, string Original_UnidadeMedida, int Id) {
             if ((Nome == null)) {
                 throw new global::System.ArgumentNullException("Nome");
             }
@@ -4826,24 +4766,22 @@ SELECT Id, Nome, UnidadeMedida, EstoqueAtual FROM MateriaPrima WHERE (Id = @Id)"
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(UnidadeMedida));
             }
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((decimal)(EstoqueAtual));
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_Id));
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Original_Id));
             if ((Original_Nome == null)) {
                 throw new global::System.ArgumentNullException("Original_Nome");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Original_Nome));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Original_Nome));
             }
             if ((Original_UnidadeMedida == null)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_UnidadeMedida));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_UnidadeMedida));
             }
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((decimal)(Original_EstoqueAtual));
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Id));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -4864,8 +4802,8 @@ SELECT Id, Nome, UnidadeMedida, EstoqueAtual FROM MateriaPrima WHERE (Id = @Id)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Nome, string UnidadeMedida, decimal EstoqueAtual, int Original_Id, string Original_Nome, string Original_UnidadeMedida, decimal Original_EstoqueAtual) {
-            return this.Update(Nome, UnidadeMedida, EstoqueAtual, Original_Id, Original_Nome, Original_UnidadeMedida, Original_EstoqueAtual, Original_Id);
+        public virtual int Update(string Nome, string UnidadeMedida, int Original_Id, string Original_Nome, string Original_UnidadeMedida) {
+            return this.Update(Nome, UnidadeMedida, Original_Id, Original_Nome, Original_UnidadeMedida, Original_Id);
         }
     }
     
@@ -5183,7 +5121,7 @@ SELECT Id, Nome, Preco, ProducaoDiariaFixa FROM Produto WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(PadariaDocePaoDataSet.ProdutoDataTable dataTable) {
+        public virtual int Fill(PadariaDocePaoDataSet1.ProdutoDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5196,9 +5134,9 @@ SELECT Id, Nome, Preco, ProducaoDiariaFixa FROM Produto WHERE (Id = @Id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual PadariaDocePaoDataSet.ProdutoDataTable GetData() {
+        public virtual PadariaDocePaoDataSet1.ProdutoDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            PadariaDocePaoDataSet.ProdutoDataTable dataTable = new PadariaDocePaoDataSet.ProdutoDataTable();
+            PadariaDocePaoDataSet1.ProdutoDataTable dataTable = new PadariaDocePaoDataSet1.ProdutoDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5206,14 +5144,14 @@ SELECT Id, Nome, Preco, ProducaoDiariaFixa FROM Produto WHERE (Id = @Id)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PadariaDocePaoDataSet.ProdutoDataTable dataTable) {
+        public virtual int Update(PadariaDocePaoDataSet1.ProdutoDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(PadariaDocePaoDataSet dataSet) {
+        public virtual int Update(PadariaDocePaoDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "Produto");
         }
         
@@ -5570,7 +5508,7 @@ SELECT Id, Nome, Preco, ProducaoDiariaFixa FROM Produto WHERE (Id = @Id)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(PadariaDocePaoDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(PadariaDocePaoDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._clienteTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Cliente.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -5625,7 +5563,7 @@ SELECT Id, Nome, Preco, ProducaoDiariaFixa FROM Produto WHERE (Id = @Id)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(PadariaDocePaoDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(PadariaDocePaoDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._clienteTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Cliente.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -5675,7 +5613,7 @@ SELECT Id, Nome, Preco, ProducaoDiariaFixa FROM Produto WHERE (Id = @Id)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(PadariaDocePaoDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(PadariaDocePaoDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._fichaTecnicaTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.FichaTecnica.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -5749,7 +5687,7 @@ SELECT Id, Nome, Preco, ProducaoDiariaFixa FROM Produto WHERE (Id = @Id)";
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(PadariaDocePaoDataSet dataSet) {
+        public virtual int UpdateAll(PadariaDocePaoDataSet1 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

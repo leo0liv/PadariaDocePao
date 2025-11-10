@@ -28,14 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuPadariaDocePao = new System.Windows.Forms.MenuStrip();
-            this.inícioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.matériasPrimasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.planejamentoDeProduçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.configuraçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btProdutos = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -43,89 +35,17 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btPlanejamentoProducao = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btMateriaPrima = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btClientes = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.btRelatorios = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.pBoxPadariaDocePao = new System.Windows.Forms.PictureBox();
-            this.menuPadariaDocePao.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).BeginInit();
             this.SuspendLayout();
-            // 
-            // menuPadariaDocePao
-            // 
-            this.menuPadariaDocePao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(244)))), ((int)(((byte)(239)))));
-            this.menuPadariaDocePao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.menuPadariaDocePao.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inícioToolStripMenuItem,
-            this.produtosToolStripMenuItem,
-            this.matériasPrimasToolStripMenuItem,
-            this.eToolStripMenuItem,
-            this.planejamentoDeProduçãoToolStripMenuItem,
-            this.configuraçõesToolStripMenuItem,
-            this.sairToolStripMenuItem});
-            this.menuPadariaDocePao.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
-            this.menuPadariaDocePao.Location = new System.Drawing.Point(0, 0);
-            this.menuPadariaDocePao.Name = "menuPadariaDocePao";
-            this.menuPadariaDocePao.Size = new System.Drawing.Size(800, 23);
-            this.menuPadariaDocePao.TabIndex = 1;
-            this.menuPadariaDocePao.Text = "menuPadariaDocePao";
-            this.menuPadariaDocePao.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuPadariaDocePao_ItemClicked);
-            // 
-            // inícioToolStripMenuItem
-            // 
-            this.inícioToolStripMenuItem.Name = "inícioToolStripMenuItem";
-            this.inícioToolStripMenuItem.Size = new System.Drawing.Size(48, 19);
-            this.inícioToolStripMenuItem.Text = "Início";
-            this.inícioToolStripMenuItem.Click += new System.EventHandler(this.inícioToolStripMenuItem_Click);
-            // 
-            // produtosToolStripMenuItem
-            // 
-            this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(67, 19);
-            this.produtosToolStripMenuItem.Text = "Produtos";
-            this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
-            // 
-            // matériasPrimasToolStripMenuItem
-            // 
-            this.matériasPrimasToolStripMenuItem.Name = "matériasPrimasToolStripMenuItem";
-            this.matériasPrimasToolStripMenuItem.Size = new System.Drawing.Size(105, 19);
-            this.matériasPrimasToolStripMenuItem.Text = "Matérias-Primas";
-            this.matériasPrimasToolStripMenuItem.Click += new System.EventHandler(this.matériasPrimasToolStripMenuItem_Click);
-            // 
-            // eToolStripMenuItem
-            // 
-            this.eToolStripMenuItem.Name = "eToolStripMenuItem";
-            this.eToolStripMenuItem.Size = new System.Drawing.Size(87, 19);
-            this.eToolStripMenuItem.Text = "Encomendas";
-            this.eToolStripMenuItem.Click += new System.EventHandler(this.eToolStripMenuItem_Click);
-            // 
-            // planejamentoDeProduçãoToolStripMenuItem
-            // 
-            this.planejamentoDeProduçãoToolStripMenuItem.Name = "planejamentoDeProduçãoToolStripMenuItem";
-            this.planejamentoDeProduçãoToolStripMenuItem.Size = new System.Drawing.Size(162, 19);
-            this.planejamentoDeProduçãoToolStripMenuItem.Text = "Planejamento de Produção";
-            this.planejamentoDeProduçãoToolStripMenuItem.Click += new System.EventHandler(this.planejamentoDeProduçãoToolStripMenuItem_Click);
-            // 
-            // configuraçõesToolStripMenuItem
-            // 
-            this.configuraçõesToolStripMenuItem.Name = "configuraçõesToolStripMenuItem";
-            this.configuraçõesToolStripMenuItem.Size = new System.Drawing.Size(96, 19);
-            this.configuraçõesToolStripMenuItem.Text = "Configurações";
-            // 
-            // sairToolStripMenuItem
-            // 
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 19);
-            this.sairToolStripMenuItem.Text = "Sair";
-            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // btProdutos
             // 
@@ -145,7 +65,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(207)))), ((int)(((byte)(194)))));
             this.panel1.Controls.Add(this.btProdutos);
-            this.panel1.Location = new System.Drawing.Point(142, 230);
+            this.panel1.Location = new System.Drawing.Point(466, 61);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(268, 54);
             this.panel1.TabIndex = 8;
@@ -154,7 +74,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(207)))), ((int)(((byte)(194)))));
             this.panel2.Controls.Add(this.btEncomendas);
-            this.panel2.Location = new System.Drawing.Point(416, 230);
+            this.panel2.Location = new System.Drawing.Point(466, 181);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(268, 54);
             this.panel2.TabIndex = 9;
@@ -177,7 +97,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(207)))), ((int)(((byte)(194)))));
             this.panel3.Controls.Add(this.btPlanejamentoProducao);
-            this.panel3.Location = new System.Drawing.Point(142, 290);
+            this.panel3.Location = new System.Drawing.Point(466, 121);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(268, 54);
             this.panel3.TabIndex = 9;
@@ -199,81 +119,59 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(207)))), ((int)(((byte)(194)))));
-            this.panel4.Controls.Add(this.btMateriaPrima);
-            this.panel4.Location = new System.Drawing.Point(416, 290);
+            this.panel4.Controls.Add(this.button1);
+            this.panel4.Location = new System.Drawing.Point(466, 241);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(268, 54);
-            this.panel4.TabIndex = 9;
+            this.panel4.TabIndex = 10;
             // 
-            // btMateriaPrima
+            // button1
             // 
-            this.btMateriaPrima.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(117)))), ((int)(((byte)(81)))));
-            this.btMateriaPrima.FlatAppearance.BorderSize = 0;
-            this.btMateriaPrima.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btMateriaPrima.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.btMateriaPrima.Location = new System.Drawing.Point(0, 0);
-            this.btMateriaPrima.Name = "btMateriaPrima";
-            this.btMateriaPrima.Size = new System.Drawing.Size(265, 51);
-            this.btMateriaPrima.TabIndex = 2;
-            this.btMateriaPrima.Text = "MATÉRIAS-PRIMAS";
-            this.btMateriaPrima.UseVisualStyleBackColor = false;
-            this.btMateriaPrima.Click += new System.EventHandler(this.btMateriaPrima_Click);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(117)))), ((int)(((byte)(81)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(265, 51);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "MATÉRIA-PRIMA / ESTOQUE";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(207)))), ((int)(((byte)(194)))));
-            this.panel5.Controls.Add(this.btClientes);
-            this.panel5.Location = new System.Drawing.Point(142, 347);
+            this.panel5.Controls.Add(this.button2);
+            this.panel5.Location = new System.Drawing.Point(466, 301);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(268, 54);
-            this.panel5.TabIndex = 10;
+            this.panel5.TabIndex = 11;
             // 
-            // btClientes
+            // button2
             // 
-            this.btClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(117)))), ((int)(((byte)(81)))));
-            this.btClientes.FlatAppearance.BorderSize = 0;
-            this.btClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.btClientes.Location = new System.Drawing.Point(0, 0);
-            this.btClientes.Name = "btClientes";
-            this.btClientes.Size = new System.Drawing.Size(265, 51);
-            this.btClientes.TabIndex = 2;
-            this.btClientes.Text = "CLIENTES";
-            this.btClientes.UseVisualStyleBackColor = false;
-            this.btClientes.Click += new System.EventHandler(this.btClientes_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(207)))), ((int)(((byte)(194)))));
-            this.panel6.Controls.Add(this.btRelatorios);
-            this.panel6.Location = new System.Drawing.Point(416, 347);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(268, 54);
-            this.panel6.TabIndex = 9;
-            // 
-            // btRelatorios
-            // 
-            this.btRelatorios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(117)))), ((int)(((byte)(81)))));
-            this.btRelatorios.FlatAppearance.BorderSize = 0;
-            this.btRelatorios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btRelatorios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.btRelatorios.Location = new System.Drawing.Point(0, 0);
-            this.btRelatorios.Name = "btRelatorios";
-            this.btRelatorios.Size = new System.Drawing.Size(265, 51);
-            this.btRelatorios.TabIndex = 2;
-            this.btRelatorios.Text = "RELATÓRIOS";
-            this.btRelatorios.UseVisualStyleBackColor = false;
-            this.btRelatorios.Click += new System.EventHandler(this.btRelatorios_Click);
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(117)))), ((int)(((byte)(81)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.button2.Location = new System.Drawing.Point(0, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(265, 51);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "CADERNO DE RECEITAS";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pBoxPadariaDocePao
             // 
             this.pBoxPadariaDocePao.Image = global::PadariaDocePao.Properties.Resources.Paodoce;
-            this.pBoxPadariaDocePao.Location = new System.Drawing.Point(319, 42);
+            this.pBoxPadariaDocePao.Location = new System.Drawing.Point(85, 70);
             this.pBoxPadariaDocePao.Name = "pBoxPadariaDocePao";
-            this.pBoxPadariaDocePao.Size = new System.Drawing.Size(176, 182);
+            this.pBoxPadariaDocePao.Size = new System.Drawing.Size(311, 277);
             this.pBoxPadariaDocePao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBoxPadariaDocePao.TabIndex = 0;
             this.pBoxPadariaDocePao.TabStop = false;
+            this.pBoxPadariaDocePao.Click += new System.EventHandler(this.pBoxPadariaDocePao_Click);
             // 
             // FrmTelaPrincipal
             // 
@@ -281,43 +179,28 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(244)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pBoxPadariaDocePao);
-            this.Controls.Add(this.menuPadariaDocePao);
-            this.MainMenuStrip = this.menuPadariaDocePao;
             this.Name = "FrmTelaPrincipal";
             this.Text = "FrmTelaPrincipal";
             this.Load += new System.EventHandler(this.FrmTelaPrincipal_Load);
-            this.menuPadariaDocePao.ResumeLayout(false);
-            this.menuPadariaDocePao.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pBoxPadariaDocePao)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.PictureBox pBoxPadariaDocePao;
-        private System.Windows.Forms.MenuStrip menuPadariaDocePao;
-        private System.Windows.Forms.ToolStripMenuItem inícioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem matériasPrimasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem planejamentoDeProduçãoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem configuraçõesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.Button btProdutos;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
@@ -325,10 +208,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btPlanejamentoProducao;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btMateriaPrima;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btClientes;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button btRelatorios;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -17,95 +17,45 @@ namespace PadariaDocePao
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void menuPadariaDocePao_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-            
-        }
-
-        private void produtosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmProdutos frmProdutos = new FrmProdutos();
-            frmProdutos.Show();
-        }
-
         private void FrmTelaPrincipal_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            // Fecha o menu atual
-            this.Hide();
-
-            // Reabre o formulário de login
-            FrmTelaLogin frmTelaLogin = new FrmTelaLogin();
-            frmTelaLogin.Show();
-        }
-
         private void btProdutos_Click(object sender, EventArgs e)
         {
-            FrmProdutos frmProdutos = new FrmProdutos();
-            frmProdutos.Show();
+            FrmCadastrarProduto frmCadastrarProduto = new FrmCadastrarProduto();
+            frmCadastrarProduto.ShowDialog(); 
         }
 
-        private void btMateriaPrima_Click(object sender, EventArgs e)
-        {
-            FrmMateriaPrima frmMateriaPrima = new FrmMateriaPrima();
-            frmMateriaPrima.Show();
-        }
-
-        private void eToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmEncomendas frmEncomendas = new FrmEncomendas();
-            frmEncomendas.Show();
-        }
 
         private void btEncomendas_Click(object sender, EventArgs e)
         {
-            FrmEncomendas frmEncomendas = new FrmEncomendas();
-            frmEncomendas.Show();
-        }
-
-        private void inícioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmTelaPrincipal frmTelaPrincipal = new FrmTelaPrincipal();
-            frmTelaPrincipal.Show();
-        }
-
-        private void btClientes_Click(object sender, EventArgs e)
-        {
-            FrmCadastroCliente frmCadastroCliente = new FrmCadastroCliente();
-            frmCadastroCliente.Show();
-        }
-
-        private void planejamentoDeProduçãoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FrmPlanejamentoProdução frmPlanejamentoProdução = new FrmPlanejamentoProdução();
-            frmPlanejamentoProdução.Show();
+            FrmEncomenda frmEncomenda = new FrmEncomenda();
+            frmEncomenda.ShowDialog();
         }
 
         private void btPlanejamentoProducao_Click(object sender, EventArgs e)
         {
-            FrmPlanejamentoProdução frmPlanejamentoProdução = new FrmPlanejamentoProdução();
-            frmPlanejamentoProdução.Show();
+            FrmPainelProducao frmPainelProducao = new FrmPainelProducao();
+            frmPainelProducao.ShowDialog();
         }
 
-        private void matériasPrimasToolStripMenuItem_Click(object sender, EventArgs e)
+        private void pBoxPadariaDocePao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             FrmMateriaPrima frmMateriaPrima = new FrmMateriaPrima();
-            frmMateriaPrima.Show();
+            frmMateriaPrima.ShowDialog();
         }
 
-        private void btRelatorios_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            FrmRelatorios frmRelatorios = new FrmRelatorios();
-            frmRelatorios.Show();
+            FrmReceitas frmReceitas = new FrmReceitas();
+            frmReceitas.ShowDialog();
         }
     }
 }
